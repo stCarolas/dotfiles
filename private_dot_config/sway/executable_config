@@ -1,0 +1,107 @@
+### Settings
+
+  titlebar_border_thickness 0
+  default_border pixel
+  exec ~/.azotebg
+  client.focused #11FF11 #55FF55  #110000 #55FF55 #55FF55 
+  client.unfocused #918175 #1C1B19 #FCE8C3 #1C1B19 #918175
+  focus_follows_mouse no
+
+  set $left  h
+  set $down  j
+  set $up    k
+  set $right l
+
+  set $term alacritty
+  set $menu sgtk-grid
+      
+  set $mod Mod4
+  set $altmod Mod1
+  floating_modifier $mod normal
+
+### Key bindings
+#
+# Basics:
+#
+    bindsym $mod+Return         exec $term
+    bindsym $mod+$altmod+Return exec firefox
+    bindsym $mod+Shift+q        kill
+    bindsym $mod+Shift+c        reload
+    bindsym $mod+Shift+e        exit
+#
+# Moving around:
+#
+    bindsym $mod+$left  focus left
+    bindsym $mod+$down  focus down
+    bindsym $mod+$up    focus up
+    bindsym $mod+$right focus right
+
+    bindsym $mod+$altmod+$left  move left
+    bindsym $mod+$altmod+$down  move down
+    bindsym $mod+$altmod+$up    move up
+    bindsym $mod+$altmod+$right move right
+
+#
+# Layout stuff:
+#
+    bindsym $mod+n splith
+    bindsym $mod+v splith;layout stacking
+    bindsym $mod+s layout stacking
+    bindsym $mod+w layout tabbed
+    bindsym $mod+e layout toggle split
+    bindsym $mod+a focus parent
+
+    bindsym $mod+f             fullscreen
+    bindsym $mod+$altmod+space floating toggle
+    bindsym $mod+$altmod+i     focus    floating
+
+#
+# Utility bindings
+#
+    bindsym $mod+m mode "menu"
+    mode "menu" {
+        bindsym h mode "default"; move scratchpad;
+        bindsym m mode "default"; exec nwgbar;
+        bindsym n mode "default"; exec ~/.local/bin/new_workspace.sh;
+        bindsym r mode "default"; exec ~/.local/bin/rename_workspace.sh;
+        bindsym Escape mode "default";
+    }
+#
+# workspace navigation
+#
+    bindsym $mod+o exec ~/.local/bin/switch_workspaces.sh 
+    bindsym $altmod+tab workspace back_and_forth
+#
+# Resize bindings
+#
+    bindsym $mod+r mode "resize"
+    mode "resize" {
+        bindsym $left resize shrink width 10 px or 10 ppt
+        bindsym $down resize grow height 10 px or 10 ppt
+        bindsym $up resize shrink height 10 px or 10 ppt
+        bindsym $right resize grow width 10 px or 10 ppt
+
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+    }
+
+    bindsym $mod+space exec nwggrid -d
+    bindsym $mod+$altmod+o exec /home/stCarolas/.local/bin/swytch.sh 
+
+input type:keyboard {
+    xkb_layout us,ru
+    xkb_options grp:lctrl_rctrl_switch,ctrl:nocaps
+}
+  
+gaps inner 10
+gaps outer 5
+gaps top 10
+
+exec sleep 30 && evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/event2 || evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/event3 &
+
+workspace first

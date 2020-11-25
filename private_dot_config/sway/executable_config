@@ -102,6 +102,6 @@ gaps inner 10
 gaps outer 5
 gaps top 10
 
-exec sleep 30 && evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/event2 || evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/event3 &
+exec sleep 30 && evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/by-id/usb-Logitech_G513_Carbon_Tactile_0F61376B3633-event-kbd &
 
 workspace first

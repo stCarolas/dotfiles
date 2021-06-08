@@ -1,0 +1,137 @@
+snippet rac "RequiredArgsConstructor"
+import lombok.RequiredArgsConstructor;
+
+@RequiredArgsConstructor
+endsnippet
+
+snippet logmarker
+static final Marker withClassMarker = MarkerManager.getMarker(
+	`!p snip.rv = snip.basename`.class.getCanonicalName()
+);
+endsnippet
+
+snippet fn
+($1) -> $0
+endsnippet
+
+snippet pva
+	public void apply($0){
+	}
+endsnippet
+
+snippet uuid
+UUID.randomUUID().toString()
+endsnippet
+
+snippet sout
+System.out.println(String.format("$1", $0));
+endsnippet
+
+snippet interface
+package  `!p 
+m = re.search(".*src/main/\w+/(.*)/\w+\.java", path)
+snip.rv = m.group(1).replace("/",".")
+`;
+
+public interface `!p snip.rv = snip.basename` {
+${0}
+}
+endsnippet
+
+snippet class
+package  `!p 
+m = re.search(".*src/main/\w+/(.*)/\w+\.java", path)
+snip.rv = m.group(1).replace("/",".")
+`;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+public class `!p snip.rv = snip.basename` {
+${0}
+  static final Logger log = LogManager.getLogger();
+}
+endsnippet
+
+snippet logger
+private static final Logger log = LogManager.getLogger();
+endsnippet
+
+snippet dto
+package  `!p 
+m = re.search(".*src/main/\w+/(.*)/\w+\.java", path)
+snip.rv = m.group(1).replace("/",".")
+`;
+
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import org.immutables.value.Value.Immutable;
+
+@JsonSerialize(as = Immutable`!p snip.rv = snip.basename`.class)
+@JsonDeserialize(as = Immutable`!p snip.rv = snip.basename`.class,builder = Immutable`!p snip.rv = snip.basename`.Builder.class)
+@Immutable public interface `!p snip.rv = snip.basename` {
+${0}
+}
+endsnippet
+
+snippet test
+package  `!p 
+m = re.search(".*src/test/java/(.*)/\w+\.java", path)
+snip.rv = m.group(1).replace("/",".")
+`;
+
+import org.junit.jupiter.api.Test;
+import static org.mockito.BDDMockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+
+public class `!p snip.rv = snip.basename` {
+
+	${0}
+}
+endsnippet
+
+snippet tt
+@Test
+public void ${1}() {
+	${0}
+}
+endsnippet
+
+snippet fun
+package  `!p 
+m = re.search(".*src/main/java/(.*)/\w+\.java", path)
+snip.rv = m.group(1).replace("/",".")
+`;
+
+import javax.inject.Named;
+import static io.vavr.API.*;
+
+@Named("`!p snip.rv = snip.basename`")
+public class `!p snip.rv = snip.basename` {
+${0}
+}
+endsnippet
+
+snippet ira
+import static io.restassured.RestAssured.*;
+import static org.hamcrest.Matchers.*;
+import static org.junit.jupiter.api.Assertions.*;
+endsnippet
+
+snippet ij
+import static org.mockito.Mockito.*;
+import static org.junit.jupiter.api.Assertions.*;
+endsnippet
+
+snippet iva
+import static io.vavr.API.*;
+endsnippet
+
+snippet ids
+import static ru.ds.Error.*;
+endsnippet
+
+snippet sw
+@SuppressWarnings("all")
+endsnippet

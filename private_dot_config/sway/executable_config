@@ -12,7 +12,7 @@
   set $up    k
   set $right l
 
-  set $term alacritty
+  set $term WAYLAND_DISPLAY= alacritty
   set $menu sgtk-grid
       
   set $mod Mod4
@@ -24,8 +24,8 @@
 # Basics:
 #
     bindsym $mod+Return         exec $term
-    bindsym $mod+$altmod+Return exec firefox
-    bindsym $mod+Shift+q        kill
+    bindsym $mod+$altmod+Return exec ~/.local/bin/qb
+    bindsym $mod+q        kill
     bindsym $mod+Shift+c        reload
     bindsym $mod+Shift+e        exit
 #
@@ -61,16 +61,19 @@
     bindsym $mod+m mode "menu"
     mode "menu" {
         bindsym h mode "default"; move scratchpad;
+        bindsym s mode "default"; scratchpad show;
         bindsym m mode "default"; exec nwgbar;
         bindsym n mode "default"; exec ~/.local/bin/new_workspace.sh;
         bindsym r mode "default"; exec ~/.local/bin/rename_workspace.sh;
+        bindsym p exec grim -g "$(slurp)" /tmp/$(date +%Y-%m-%d_%H-%m-%s).png
         bindsym Escape mode "default";
     }
 #
 # workspace navigation
 #
     bindsym $mod+o exec ~/.local/bin/switch_workspaces.sh 
-    bindsym $altmod+tab workspace back_and_forth
+    bindsym $mod+tab workspace back_and_forth
+    bindsym $altmod+tab exec ~/.local/bin/windowcd.sh
 #
 # Resize bindings
 #
@@ -102,6 +105,8 @@ gaps inner 10
 gaps outer 5
 gaps top 10
 
-exec sleep 30 && evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/by-id/usb-Logitech_G513_Carbon_Tactile_0F61376B3633-event-kbd &
+for_window [class=".*"] floating enable
+
+#exec sleep 30 && evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/by-id/usb-Logitech_G513_Carbon_Tactile_0F61376B3633-event-kbd &
 
 workspace first

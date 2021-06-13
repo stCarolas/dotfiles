@@ -1,2 +1,3 @@
-Plug 'DilanGMB/nebulous.nvim'
-let g:nb_style = "twilight"
+Plug 'sainnhe/sonokai'
+let g:sonokai_enable_italic = 1
+let g:sonokai_style = 'andromeda'

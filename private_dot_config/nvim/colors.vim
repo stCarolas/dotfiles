@@ -1,8 +1,7 @@
 set background=dark
 set termguicolors
 
-let g:ayucolor="mirage"
-let g:ayu_italic_comment = 1
+let g:sonokai_style = 'atlantis'
 
-colorscheme nebulous
+colorscheme sonokai
 highlight SignColumn guibg=235

@@ -75,7 +75,6 @@
 #
 # workspace navigation
 #
-    bindsym $mod+o exec ~/.local/bin/switch_workspaces.sh 
     bindsym $mod+tab workspace back_and_forth
     bindsym $altmod+tab exec ~/.local/bin/windowcd.sh
 #
@@ -87,6 +86,7 @@
         bindsym c mode "default"; workspace code;
         bindsym t mode "default"; workspace talk;
         bindsym g mode "default"; workspace game;
+        bindsym o mode "default"; exec ~/.local/bin/switch_workspaces.sh;
 
         bindsym Return mode "default"
         bindsym Escape mode "default"

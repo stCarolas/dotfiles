@@ -6,8 +6,8 @@ window:
     x: 0
     y: 0
   dynamic_padding: false
-  decorations: none
-  start_maximized: false
+  decorations: Full
+  start_maximized: true
   dynamic_title: true
 scrolling:
   history: 10000
@@ -15,14 +15,14 @@ scrolling:
 
 font:
   normal:
-    family: Iosevka Term
+    family: VictorMono NF
   bold:
-    family: Iosevka Term
+    family: VictorMono NF
     style: Bold
   italic:
-    family: Iosevka Term
+    family: VictorMono NF
     style: Italic
-  size: 20.0
+  size: 18.0
 
 persistent_logging: false
 
@@ -86,8 +86,6 @@ colors:
     cyan: '0x186c60'
     white: '0x63686d'
 
-background_opacity: 1.0
-
 mouse_bindings:
   - {mouse: Middle, action: PasteSelection}
 
@@ -95,8 +93,6 @@ mouse:
   double_click: {threshold: 300}
   triple_click: {threshold: 300}
   hide_when_typing: true
-  url:
-    launcher: xdg-open
 
 selection:
   semantic_escape_chars: ",│`|:\"' ()[]{}<>"
@@ -197,7 +193,6 @@ key_bindings:
   - {key: U, mods: Alt, action: ScrollPageDown}
   - {key: D, mods: Alt, action: ScrollPageUp}
   - {key: Equals, mods: Control, action: IncreaseFontSize}
-  - {key: Subtract, mods: Control, action: DecreaseFontSize}
   - {key: Home, chars: "\eOH", mode: AppCursor}
   - {key: Home, chars: "\e[H", mode: ~AppCursor}
   - {key: End, chars: "\eOF", mode: AppCursor}

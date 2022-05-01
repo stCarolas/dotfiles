@@ -1,4 +1,5 @@
 require('configs.common_fn')
+use "EdenEast/nightfox.nvim"
 
 require('nightfox').setup({
 	specs = {

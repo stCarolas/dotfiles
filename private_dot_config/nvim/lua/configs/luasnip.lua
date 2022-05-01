@@ -1,4 +1,5 @@
 require('configs.common_fn')
+use 'L3MON4D3/LuaSnip'
 
 local ls = require"luasnip"
 local s = ls.snippet
@@ -16,6 +17,8 @@ local fmt = require("luasnip.extras.fmt").fmt
 local m = require("luasnip.extras").m
 local lambda = require("luasnip.extras").l
 
+vim.api.nvim_set_keymap('i', '<C-j>','<cmd> lua require"luasnip".expand_or_jump()<CR>', { noremap = true })
+
 ls.add_snippets("java", {
 	s("class", {
 		t("public class "),
@@ -25,5 +28,3 @@ ls.add_snippets("java", {
 		t("}")
 	})
 })
-
-vim.api.nvim_set_keymap('i', '<C-j>','<cmd> lua require"luasnip".expand_or_jump()<CR>', { noremap = true })

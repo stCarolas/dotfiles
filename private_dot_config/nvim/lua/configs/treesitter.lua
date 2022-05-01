@@ -1,3 +1,5 @@
+require('configs.common_fn')
+use 'nvim-treesitter/nvim-treesitter'
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all"
   ensure_installed = { "java", "lua" },

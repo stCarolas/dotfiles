@@ -1,3 +1,5 @@
+require('configs.common_fn')
+use 'numToStr/Comment.nvim'
 require('Comment').setup({
     ---Add a space b/w comment and the line
     ---@type boolean|fun():boolean

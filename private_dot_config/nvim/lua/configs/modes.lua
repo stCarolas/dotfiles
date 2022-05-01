@@ -1,4 +1,5 @@
 require('configs.common_fn')
+use 'mvllow/modes.nvim'
 require('modes').setup({
 		colors = {
 			copy = "#f5c359",

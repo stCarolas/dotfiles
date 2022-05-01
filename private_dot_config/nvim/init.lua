@@ -1,6 +1,7 @@
-require('bootstrap')
+-- packer
 require('plugins')
-require('configs.stock_options')
+-- standart options
+require('stock_options')
 -- beatify
 require('configs.nightfox')
 require('configs.galaxyline')
@@ -15,8 +16,13 @@ require('configs.treesitter')
 require('configs.cmp')
 require('configs.luasnip')
 require('configs.comment')
-require('gitsigns').setup()
 require('configs.vim-test')
+require('configs.gitsigns')
+use 'lukas-reineke/indent-blankline.nvim'
+use 'APZelos/blamer.nvim'
+use 'gpanders/editorconfig.nvim'
 -- utils
 require('configs.term')
 require('configs.close_buffers')
+use 'airblade/vim-rooter'
+

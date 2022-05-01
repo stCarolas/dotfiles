@@ -1,5 +1,7 @@
 require('configs.common_fn')
 
+use 'kyazdani42/nvim-tree.lua'
+
 vim.g.nvim_tree_show_icons = {
 	git = 1,
 	folders = 1,

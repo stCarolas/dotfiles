@@ -1,3 +1,6 @@
+require('configs.common_fn')
+use 'glepnir/galaxyline.nvim'
+
 local gl = require('galaxyline')
 local colors = require('galaxyline.theme').default
 local condition = require('galaxyline.condition')

@@ -14,8 +14,14 @@ return require('packer').startup(function()
 	use 'hrsh7th/cmp-nvim-lsp'
 	use 'hrsh7th/nvim-cmp'
 	use 'lewis6991/gitsigns.nvim'
-  use 'rmehri01/onenord.nvim'
 	use 'mvllow/modes.nvim'
 	use 'lukas-reineke/indent-blankline.nvim'
-	use { 'glepnir/galaxyline.nvim', branch = 'main' }
+	use 'glepnir/galaxyline.nvim'
+	use 'numToStr/Comment.nvim'
+	use 'airblade/vim-rooter'
+	use 'L3MON4D3/LuaSnip'
+	use 'APZelos/blamer.nvim'
+	use 'kazhala/close-buffers.nvim'
+	use "EdenEast/nightfox.nvim"
+	use 'gpanders/editorconfig.nvim'
 end)

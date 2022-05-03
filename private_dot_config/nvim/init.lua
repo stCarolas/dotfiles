@@ -21,8 +21,13 @@ require('configs.gitsigns')
 use 'lukas-reineke/indent-blankline.nvim'
 use 'APZelos/blamer.nvim'
 use 'gpanders/editorconfig.nvim'
+use {'tzachar/cmp-tabnine', run='./install.sh'}
 -- utils
 require('configs.term')
 require('configs.close_buffers')
 use 'airblade/vim-rooter'
-
+require('configs.notify')
+use 'yamatsum/nvim-nonicons'
+require('configs.twilight')
+use "tpope/vim-projectionist"
+require'lspconfig'.sumneko_lua.setup{}

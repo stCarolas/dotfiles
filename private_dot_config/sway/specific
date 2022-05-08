@@ -1,0 +1,4 @@
+exec sleep 20 && evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/by-path/platform-i8042-serio-0-event-kbd &
+exec sleep 20 && evscript -f /home/stCarolas/.config/evscript/script.dyon -d /dev/input/by-path/pci-0000:00:14.0-usb-0:2:1.1-event-kbd &
+for_window [app_id="foot"] resize set 1880 1042
+output "*" bg ~/Pictures/Wallpapers/wallhaven-42x9jx.jpg fill

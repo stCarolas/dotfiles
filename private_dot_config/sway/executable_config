@@ -5,14 +5,13 @@
   client.focused #11FF11 #55FF55  #110000 #55FF55 #55FF55 
   client.unfocused #918175 #1C1B19 #FCE8C3 #1C1B19 #918175
   focus_follows_mouse no
-  output "*" bg ~/Pictures/wallhaven-odl517.jpg fill
 
   set $left  h
   set $down  j
   set $up    k
   set $right l
 
-  set $term alacritty
+  set $term foot
   set $menu sgtk-grid
       
   set $mod Mod4
@@ -125,9 +124,5 @@ for_window [class="discord"] move workspace talk
 exec flatpak run com.discordapp.Discord &
 
 include specific
-#gaps inner 3
-#gaps outer 2
-#gaps top 3
-#for_window [title=".*"] resize set 1366 768
 
 workspace talk

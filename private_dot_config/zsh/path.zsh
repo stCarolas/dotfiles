@@ -1,5 +1,5 @@
 export GOPATH=~/Coding/projects
-export JAVA_HOME=/usr/lib/jvm/java
+export JAVA_HOME=/usr/lib/jvm/java-11
 
 export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/Coding/scripts

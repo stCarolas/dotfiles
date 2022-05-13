@@ -32,3 +32,4 @@ require('configs.twilight')
 use "tpope/vim-projectionist"
 require'lspconfig'.sumneko_lua.setup{}
 use 'github/copilot.vim'
+require('configs.diffview')

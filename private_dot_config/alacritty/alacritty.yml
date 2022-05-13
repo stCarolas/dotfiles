@@ -15,12 +15,13 @@ scrolling:
 
 font:
   normal:
-    family: VictorMono NF
+    # family: VictorMono NF
+    family:  Monoid Nerd Font
   bold:
-    family: VictorMono NF
+    family:  Monoid Nerd Font
     style: Bold
   italic:
-    family: VictorMono NF
+    family:  Monoid Nerd Font
     style: Italic
   size: 16.0
 

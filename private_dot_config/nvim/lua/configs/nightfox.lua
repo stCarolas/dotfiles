@@ -10,8 +10,10 @@ require('nightfox').setup({
 		}
 	},
   groups = {
-  	Type = { fg = "palette.cyan" },
-		TSParameter = { fg = "palette.white" },
+		all = {
+			Type = { fg = "palette.cyan" },
+			TSParameter = { fg = "palette.white" },
+		}
 	},
   options = {
     styles = {

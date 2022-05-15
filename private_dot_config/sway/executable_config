@@ -12,7 +12,7 @@
   set $right l
 
   set $term foot
-  set $menu sgtk-grid
+  set $menu nwg-drawer
       
   set $mod Mod4
   set $altmod Mod1
@@ -108,7 +108,7 @@
         bindsym Escape mode "default"
     }
 
-    bindsym $mod+space exec nwggrid
+    bindsym $mod+space exec $menu 
     bindsym $mod+$altmod+o exec /home/stCarolas/.local/bin/swytch.sh 
 
 input type:keyboard {

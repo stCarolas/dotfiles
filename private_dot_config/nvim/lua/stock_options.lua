@@ -11,4 +11,5 @@ opt.termguicolors = true
 vim.g.mapleader = "m"
 
 cmd 'set guicursor=n-i-ci:ver30-Cursor-blinkwait300-blinkon200-blinkoff150'
+cmd 'set clipboard+=unnamedplus'
 map(';',':')

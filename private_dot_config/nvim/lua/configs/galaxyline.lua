@@ -6,7 +6,7 @@ local colors = require('galaxyline.theme').default
 local condition = require('galaxyline.condition')
 local gls = gl.section
 local linebg = '#88C0D0'
-gl.short_line_list = {'NvimTree','vista','dbui','packer'}
+gl.short_line_list = {'NvimTree','dbui','packer'}
 
 gls.left[1] = {
   RainbowRed = {

@@ -5,7 +5,7 @@ opt.tabstop = 4
 opt.expandtab = true
 
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
-local workspace_dir = '/home/stCarolas/Coding/projects' .. project_name
+local workspace_dir = '/home/stCarolas/Coding/projects/' .. project_name
 
 local config = {
   cmd = {

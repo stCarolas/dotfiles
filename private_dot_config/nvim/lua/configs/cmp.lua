@@ -32,9 +32,8 @@ use 'hrsh7th/cmp-nvim-lsp'
 use 'saadparwaiz1/cmp_luasnip'
 use {'tzachar/cmp-tabnine', run='./install.sh'}
 use({
-	'hrsh7th/nvim-cmp',
-	commit  = "fae808a",
-	config = function ()
+	'hrsh7th/nvim-cmp'
+})
 		local cmp = require'cmp'
 		cmp.setup({
 			snippet = {
@@ -44,7 +43,7 @@ use({
 			},
 			window = {
 				completion = cmp.config.window.bordered(),
-				-- documentation = cmp.config.window.bordered(),
+				documentation = cmp.config.window.bordered(),
 			},
 			mapping = cmp.mapping.preset.insert({
 				['<C-b>'] = cmp.mapping.scroll_docs(-4),
@@ -74,5 +73,3 @@ use({
 				{ name = 'nvim_lsp' }
 			})
 		})
-	end
-})

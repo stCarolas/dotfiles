@@ -5,12 +5,11 @@ opt.tabstop = 4
 opt.expandtab = true
 
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
-local workspace_dir = '/home/stCarolas/Coding/projects/' .. project_name
+local workspace_dir = '/tmp/' .. project_name
 
 local config = {
   cmd = {
-
-    'java', 
+    'java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
     '-Dosgi.bundles.defaultStartLevel=4',
     '-Declipse.product=org.eclipse.jdt.ls.core.product',
@@ -20,9 +19,9 @@ local config = {
     '--add-modules=ALL-SYSTEM',
     '--add-opens', 'java.base/java.util=ALL-UNNAMED',
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
-		'-javaagent:/home/stCarolas/Coding/lombok.jar',
-    '-jar', '/home/stCarolas/Coding/jdt/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
-    '-configuration', '/home/stCarolas/Coding/jdt/config_linux',
+		'-javaagent:/home/stCarolas/Coding/libs/lombok.jar',
+    '-jar', '/home/stCarolas/Coding/libs/jdt/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
+    '-configuration', '/home/stCarolas/Coding/libs/jdt/config_linux',
     '-data', workspace_dir
   },
   root_dir = require('jdtls.setup').find_root({'.git'}),

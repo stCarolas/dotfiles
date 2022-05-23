@@ -1,15 +1,16 @@
 require('configs.common_fn')
 
-local opt = vim.opt             -- global/buffer/windows-scoped options
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.cursorline = true
+vim.opt.number = true
+vim.opt.termguicolors = true
 
-opt.shiftwidth = 2
-opt.tabstop = 2
-opt.cursorline = true
-opt.number = true
-opt.termguicolors = true
-
+vim.g.do_filetype_lua = 1
+vim.g.did_load_filetypes = 0
 vim.g.mapleader = "m"
 
 cmd 'set guicursor=n-i-ci:ver30-Cursor-blinkwait300-blinkon200-blinkoff150'
 cmd 'set clipboard+=unnamedplus'
+cmd 'set laststatus=3'
 map(';',':')

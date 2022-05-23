@@ -1,13 +1,14 @@
 require('configs.common_fn')
 
-local function get_buffer_name(_,_,_)
-	local path = vim.api.nvim_buf_get_name(0)
-	return string.match(path:match "%a+%.java", "^%a+")
-end
-
 use({
 	'L3MON4D3/LuaSnip',
 	config = function ()
+
+		local function get_buffer_name(_,_,_)
+			local path = vim.api.nvim_buf_get_name(0)
+			return string.match(path:match "%a+%.java", "^%a+")
+		end
+
 		local ls = require"luasnip"
 		local s = ls.snippet
 		local t = ls.text_node

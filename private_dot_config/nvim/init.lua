@@ -20,6 +20,7 @@ require('configs.treesitter')
 require('configs.cmp')
 require('configs.luasnip')
 require('configs.comment')
+require('configs.neoformat')
 require('configs.vim-test')
 require('configs.gitsigns')
 use 'lukas-reineke/indent-blankline.nvim'

@@ -32,3 +32,9 @@ local config = {
 }
 
 require('jdtls').start_or_attach(config)
+
+local myluafun = function() print("This buffer enters") end
+
+vim.api.nvim_create_autocmd({"InsertLeave"}, {
+	command = "Neoformat"
+})

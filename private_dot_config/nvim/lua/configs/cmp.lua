@@ -32,8 +32,8 @@ use 'hrsh7th/cmp-nvim-lsp'
 use 'saadparwaiz1/cmp_luasnip'
 use {'tzachar/cmp-tabnine', run='./install.sh'}
 use({
-	'hrsh7th/nvim-cmp'
-})
+	'hrsh7th/nvim-cmp',
+	config = function ()
 		local cmp = require'cmp'
 		cmp.setup({
 			snippet = {
@@ -73,3 +73,5 @@ use({
 				{ name = 'nvim_lsp' }
 			})
 		})
+	end
+})

@@ -70,13 +70,13 @@ time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
   ["Comment.nvim"] = {
-    config = { "\27LJ\2\nÅ\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\3\nbasic\2\rextended\1\nextra\2\nextra\1\0\3\nabove\15<leader>cO\beol\15<leader>cA\nbelow\15<leader>co\ropleader\1\0\1\tline\14<leader>c\ftoggler\1\0\1\tline\15<leader>cc\1\0\2\fpadding\2\vsticky\2\nsetup\fComment\frequire\0" },
+    config = { "\27LJ\2\nÅ\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\3\nbasic\2\rextended\1\nextra\2\nextra\1\0\3\nbelow\15<leader>co\nabove\15<leader>cO\beol\15<leader>cA\ropleader\1\0\1\tline\14<leader>c\ftoggler\1\0\1\tline\15<leader>cc\1\0\2\vsticky\2\fpadding\2\nsetup\fComment\frequire\0" },
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/Comment.nvim",
     url = "https://github.com/numToStr/Comment.nvim"
   },
   LuaSnip = {
-    config = { "\27LJ\2\nq\0\3\n\0\a\0\r6\3\0\0009\3\1\0039\3\2\3)\5\0\0B\3\2\0026\4\3\0009\4\4\4\18\b\3\0009\6\4\3'\t\5\0B\6\3\2'\a\6\0D\4\3\0\t^%a+\14%a+%.java\nmatch\vstring\22nvim_buf_get_name\bapi\bvim‹\3\1\0\19\0\17\2E3\0\0\0006\1\1\0'\3\2\0B\1\2\0029\2\3\0019\3\4\0019\4\5\0019\5\6\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\t\0004\r\6\0\18\14\3\0'\16\n\0B\14\2\2>\14\1\r\18\14\5\0\18\16\0\0004\17\0\0004\18\0\0B\14\4\2>\14\2\r\18\14\3\0005\16\v\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\f\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\r\0004\r\6\0\18\14\3\0005\16\14\0B\14\2\2>\14\1\r\18\14\4\0)\16\1\0B\14\2\2>\14\2\r\18\14\3\0005\16\15\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\16\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\1K\0\1\0\1\3\0\0\5\6}\1\3\0\0\t() {\t    \1\3\0\0\n@Test\21public void test\ttest\1\4\0\0\5\t    \6}\1\4\0\0\a {\t    \t    \18public class \nclass\tjava\17add_snippets\18function_node\16insert_node\14text_node\fsnippet\fluasnip\frequire\0\vÄÄ¿ô\4\3ÄÄ¿ô\4\0" },
+    config = { "\27LJ\2\nq\0\3\n\0\a\0\r6\3\0\0009\3\1\0039\3\2\3)\5\0\0B\3\2\0026\4\3\0009\4\4\4\18\b\3\0009\6\4\3'\t\5\0B\6\3\2'\a\6\0D\4\3\0\t^%a+\14%a+%.java\nmatch\vstring\22nvim_buf_get_name\bapi\bvimœ\4\1\0\19\0\19\2R3\0\0\0006\1\1\0'\3\2\0B\1\2\0029\2\3\0019\3\4\0019\4\5\0019\5\6\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\t\0004\r\6\0\18\14\3\0'\16\n\0B\14\2\2>\14\1\r\18\14\5\0\18\16\0\0004\17\0\0004\18\0\0B\14\4\2>\14\2\r\18\14\3\0005\16\v\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\f\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\r\0004\r\3\0\18\14\3\0'\16\14\0B\14\2\0?\14\1\0B\n\3\0?\n\1\0B\6\3\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\15\0004\r\6\0\18\14\3\0005\16\16\0B\14\2\2>\14\1\r\18\14\4\0)\16\1\0B\14\2\2>\14\2\r\18\14\3\0005\16\17\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\18\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\1K\0\1\0\1\3\0\0\5\6}\1\3\0\0\t() {\t    \1\3\0\0\n@Test\21public void test\ttest5private static final long serialVersionUID = 1L;\18serialversion\1\4\0\0\5\t    \6}\1\4\0\0\a {\t    \t    \18public class \nclass\tjava\17add_snippets\18function_node\16insert_node\14text_node\fsnippet\fluasnip\frequire\0\vÄÄ¿ô\4\3ÄÄ¿ô\4\0" },
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
@@ -128,6 +128,12 @@ _G.packer_plugins = {
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/editorconfig.nvim",
     url = "https://github.com/gpanders/editorconfig.nvim"
   },
+  ["fidget.nvim"] = {
+    config = { "\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vfidget\frequire\0" },
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/fidget.nvim",
+    url = "https://github.com/j-hui/fidget.nvim"
+  },
   ["galaxyline.nvim"] = {
     config = { "\27LJ\2\n\20\0\0\1\0\1\0\2'\0\0\0L\0\2\0\t‚ñä Œ\3\0\0\6\1$\0J5\0\1\0-\1\0\0009\1\0\1=\1\2\0-\1\0\0009\1\3\1=\1\4\0-\1\0\0009\1\5\1=\1\6\0-\1\0\0009\1\5\1=\1\a\0-\1\0\0009\1\5\1=\1\b\0-\1\0\0009\1\t\1=\1\n\0-\1\0\0009\1\0\1=\1\v\0-\1\0\0009\1\f\1=\1\r\0-\1\0\0009\1\f\1=\1\14\0-\1\0\0009\1\f\1=\1\15\0-\1\0\0009\1\16\1=\1\17\0-\1\0\0009\1\18\1=\1\19\0-\1\0\0009\1\18\1=\1\20\0-\1\0\0009\1\0\1=\1\21\0-\1\0\0009\1\0\1=\1\22\0-\1\0\0009\1\23\1=\1\24\0-\1\0\0009\1\23\1=\1\25\0-\1\0\0009\1\23\1=\1\26\0-\1\0\0009\1\0\1=\1\27\0-\1\0\0009\1\0\1=\1\28\0006\1\29\0009\1\30\0019\1\31\1'\3 \0006\4\29\0009\4!\0049\4\"\4B\4\1\0028\4\4\0&\3\4\3B\1\2\1'\1#\0L\1\2\0\1¿\nÔåå  \tmode\afn\27hi GalaxyViMode guifg=\17nvim_command\bapi\bvim\6t\6!\ar?\arm\6r\tcyan\ace\acv\aRv\6R\vviolet\aic\vyellow\6\19\6S\6s\vorange\ano\6c\fmagenta\6V\6\22\6v\tblue\6i\ngreen\6n\1\0\0\bred\21\0\0\1\0\1\0\2'\0\0\0L\0\2\0\n Ôëø \20\0\0\1\0\1\0\2'\0\0\0L\0\2\0\t ‚ñä¬\16\1\0\f\0n\0ÿ\0016\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\1\3\0016\2\0\0'\4\4\0B\2\2\0029\3\5\0'\4\6\0005\5\b\0=\5\a\0009\5\t\0035\6\16\0005\a\v\0003\b\n\0=\b\f\a5\b\14\0009\t\r\1>\t\1\b=\b\15\a=\a\17\6>\6\1\0059\5\t\0035\6\22\0005\a\19\0003\b\18\0=\b\f\a5\b\21\0009\t\20\1>\t\1\b=\b\15\a=\a\23\6>\6\2\0059\5\t\0035\6 \0005\a\24\0009\b\25\2=\b\26\a5\b\27\0>\4\2\b=\b\28\a5\b\31\0006\t\0\0'\v\29\0B\t\2\0029\t\30\t>\t\1\b=\b\15\a=\a!\6>\6\3\0059\5\t\0035\6%\0005\a\"\0009\b\25\2=\b\26\a5\b$\0009\t#\1>\t\1\b>\4\2\b=\b\15\a=\a&\6>\6\4\0059\5\t\0035\6)\0005\a'\0005\b(\0=\b\28\a4\b\3\0009\t#\1>\t\1\b>\4\2\b=\b\15\a=\a*\6>\6\5\0059\5\t\0035\6-\0005\a+\0005\b,\0009\t\20\1>\t\1\b=\b\15\a=\a.\6>\6\a\0059\5\t\0035\0062\0005\a/\0005\b1\0009\t0\1>\t\1\b=\b\15\a=\a3\6>\6\b\0059\5\t\0035\0067\0005\a4\0005\b6\0009\t5\1>\t\1\b=\b\15\a=\a8\6>\6\t\0059\5\t\0035\6;\0005\a9\0005\b:\0009\t\r\1>\t\1\b=\b\15\a=\a<\6>\6\v\0059\5=\0035\6D\0005\a?\0003\b>\0=\b\f\a9\b@\2=\b\26\a5\bA\0=\b\28\a5\bC\0009\tB\1>\t\1\b=\b\15\a=\aE\6>\6\2\0059\5=\0035\6H\0005\aF\0009\b@\2=\b\26\a5\bG\0009\tB\1>\t\1\b=\b\15\a=\aI\6>\6\3\0059\5=\0035\6N\0005\aJ\0009\bK\2=\b\26\a5\bM\0009\tL\1>\t\1\b=\b\15\a=\aO\6>\6\4\0059\5=\0035\6S\0005\aP\0009\bK\2=\b\26\a5\bR\0009\tQ\1>\t\1\b=\b\15\a=\aT\6>\6\5\0059\5=\0035\6W\0005\aU\0009\bK\2=\b\26\a5\bV\0009\t\20\1>\t\1\b=\b\15\a=\aX\6>\6\6\0059\5=\0035\6\\\0005\aZ\0003\bY\0=\b\f\a5\b[\0009\t\r\1>\t\1\b=\b\15\a=\a]\6>\6\a\0059\5^\0035\6b\0005\a_\0005\b`\0=\b\28\a5\ba\0009\t\r\1>\t\1\b=\b\15\a=\ac\6>\6\1\0059\5^\0035\6f\0005\ad\0009\b\25\2=\b\26\a5\be\0=\b\15\a=\ag\6>\6\2\0059\5h\0035\6l\0005\ai\0004\b\3\0009\tj\1>\t\1\b6\tk\0>\t\2\b=\b\15\a=\am\6>\6\1\0052\0\0ÄK\0\1\0\15BufferIcon\1\0\0\tnill\afg\1\0\1\rprovider\15BufferIcon\21short_line_right\14SFileName\1\0\0\1\4\0\0\f#88C0D0\0\tbold\1\0\1\rprovider\14SFileName\15BufferType\1\0\0\1\4\0\0\0\0\tbold\1\2\0\0\tNONE\1\0\2\rprovider\17FileTypeName\14separator\6 \20short_line_left\16RainbowBlue\1\0\0\1\0\0\1\0\0\0\15DiffRemove\1\0\0\1\0\0\1\0\2\rprovider\15DiffRemove\ticon\n ÔÖÜ \17DiffModified\1\0\0\1\0\0\vorange\1\0\2\rprovider\17DiffModified\ticon\t Ôßâ\fDiffAdd\1\0\0\1\0\0\ngreen\18hide_in_width\1\0\2\rprovider\fDiffAdd\ticon\f   ÔÉæ \14GitBranch\1\0\0\1\4\0\0\0\0\tbold\1\0\1\rprovider\14GitBranch\fGitIcon\1\0\0\1\4\0\0\0\0\tbold\vviolet\1\2\0\0\tNONE\24check_git_workspace\1\0\1\14separator\6 \0\nright\19DiagnosticInfo\1\0\0\1\0\0\1\0\2\rprovider\19DiagnosticInfo\ticon\n ÔÅö \19DiagnosticHint\1\0\0\1\0\0\tcyan\1\0\2\rprovider\19DiagnosticHint\ticon\n ÔÅ™ \19DiagnosticWarn\1\0\0\1\0\0\vyellow\1\0\2\rprovider\19DiagnosticWarn\ticon\n ÔÅ± \20DiagnosticError\1\0\0\1\0\0\1\0\2\rprovider\20DiagnosticError\ticon\n ÔÅó \rLineInfo\1\0\0\1\2\0\0\tNONE\1\0\2\rprovider\15LineColumn\14separator\6 \rFileName\1\0\0\1\4\0\0\0\0\tbold\rdarkblue\1\0\1\rprovider\rFileName\rFileIcon\1\0\0\1\0\0\24get_file_icon_color!galaxyline.provider_fileinfo\24separator_highlight\1\2\0\0\tNONE\14condition\21buffer_not_empty\1\0\2\rprovider\rFileIcon\14separator\6 \vViMode\1\0\0\1\4\0\0\0\0\tbold\bred\1\0\0\0\15RainbowRed\1\0\0\14highlight\1\0\0\tblue\rprovider\1\0\0\0\tleft\1\4\0\0\rNvimTree\tdbui\vpacker\20short_line_list\f#88C0D0\fsection\25galaxyline.condition\fdefault\21galaxyline.theme\15galaxyline\frequire\0" },
     loaded = true,
@@ -140,6 +146,12 @@ _G.packer_plugins = {
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
+  ["hlargs.nvim"] = {
+    config = { "\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vhlargs\frequire\0" },
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/hlargs.nvim",
+    url = "https://github.com/m-demare/hlargs.nvim"
+  },
   ["hop.nvim"] = {
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/hop.nvim",
@@ -150,14 +162,29 @@ _G.packer_plugins = {
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/indent-blankline.nvim",
     url = "https://github.com/lukas-reineke/indent-blankline.nvim"
   },
+  ["lsp-colors.nvim"] = {
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/lsp-colors.nvim",
+    url = "https://github.com/folke/lsp-colors.nvim"
+  },
   ["modes.nvim"] = {
-    config = { "\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ignore_filetypes\1\3\0\0\rNvimTree\20TelescopePrompt\vcolors\1\0\4\15set_number\2\19set_cursorline\2\17line_opacity\4≥ÊÃô\3≥Êå˛\3\15set_cursor\2\1\0\4\tcopy\f#f5c359\vdelete\f#c75c6a\vvisual\f#9745be\vinsert\f#40cc40\nsetup\nmodes\frequire\0" },
+    config = { "\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ignore_filetypes\1\3\0\0\rNvimTree\20TelescopePrompt\vcolors\1\0\4\15set_number\2\19set_cursorline\2\17line_opacity\4≥ÊÃô\3≥Êå˛\3\15set_cursor\2\1\0\4\vdelete\f#c75c6a\vvisual\f#9745be\tcopy\f#f5c359\vinsert\f#40cc40\nsetup\nmodes\frequire\0" },
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/modes.nvim",
     url = "https://github.com/mvllow/modes.nvim"
   },
+  neoformat = {
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/neoformat",
+    url = "https://github.com/sbdchd/neoformat"
+  },
+  neoterm = {
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/neoterm",
+    url = "https://github.com/kassio/neoterm"
+  },
   ["nightfox.nvim"] = {
-    config = { "\27LJ\2\nπ\2\0\0\6\0\23\0\0286\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\6\0005\4\4\0005\5\3\0=\5\5\4=\4\1\3=\3\b\0025\3\14\0005\4\n\0005\5\t\0=\5\v\0045\5\f\0=\5\r\4=\4\15\3=\3\16\0025\3\18\0005\4\17\0=\4\19\3=\3\20\2B\0\2\0016\0\21\0'\2\22\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\foptions\vstyles\1\0\0\1\0\1\rcomments\vitalic\vgroups\ball\1\0\0\16TSParameter\1\0\1\afg\18palette.white\tType\1\0\0\1\0\1\afg\17palette.cyan\nspecs\1\0\0\1\0\0\fdiag_bg\1\0\0\1\0\1\nerror\bbg1\nsetup\rnightfox\frequire\0" },
+    config = { "\27LJ\2\nó\5\0\0\6\0'\0,6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\6\0005\4\4\0005\5\3\0=\5\5\4=\4\1\3=\3\b\0025\3\30\0005\4\n\0005\5\t\0=\5\v\0045\5\f\0=\5\r\0045\5\14\0=\5\15\0045\5\16\0=\5\17\0045\5\18\0=\5\19\0045\5\20\0=\5\21\0045\5\22\0=\5\23\0045\5\24\0=\5\25\0045\5\26\0=\5\27\0045\5\28\0=\5\29\4=\4\31\3=\3 \0025\3\"\0005\4!\0=\4#\3=\3$\2B\0\2\0016\0%\0'\2&\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\foptions\vstyles\1\0\0\1\0\1\rcomments\vitalic\vgroups\ball\1\0\0\31DiagnosticVirtualTextError\1\0\1\abg\bbg1\30DiagnosticVirtualTextHint\1\0\1\abg\bbg1\30DiagnosticVirtualTextInfo\1\0\1\abg\bbg1\30DiagnosticVirtualTextWarn\1\0\1\abg\bbg1\19DiagnosticHint\1\0\1\abg\bbg1\19DiagnosticInfo\1\0\1\abg\bbg1\19DiagnosticWarn\1\0\1\abg\bbg1\20DiagnosticError\1\0\1\abg\bbg1\16TSParameter\1\0\1\afg\18palette.white\tType\1\0\0\1\0\1\afg\17palette.cyan\nspecs\1\0\0\1\0\0\fdiag_bg\1\0\0\1\0\5\twarn\bbg1\nhints\bbg1\fwarning\bbg1\tinfo\bbg1\nerror\bbg1\nsetup\rnightfox\frequire\0" },
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
@@ -166,6 +193,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nvim-cmp",
     url = "https://github.com/hrsh7th/nvim-cmp"
+  },
+  ["nvim-dap"] = {
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nvim-dap",
+    url = "https://github.com/mfussenegger/nvim-dap"
+  },
+  ["nvim-hlslens"] = {
+    config = { "\27LJ\2\nV\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\23nearest_float_when\valways\nsetup\fhlslens\frequire\0" },
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nvim-hlslens",
+    url = "https://github.com/kevinhwang91/nvim-hlslens"
   },
   ["nvim-jdtls"] = {
     loaded = true,
@@ -188,8 +226,13 @@ _G.packer_plugins = {
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nvim-notify",
     url = "https://github.com/rcarriga/nvim-notify"
   },
+  ["nvim-scrollview"] = {
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nvim-scrollview",
+    url = "https://github.com/dstein64/nvim-scrollview"
+  },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\nç\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\factions\14open_file\1\0\0\1\0\1\17quit_on_open\2\tview\1\0\0\1\0\1\nwidth\3¨\2\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\n„\1\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\0025\3\r\0005\4\v\0005\5\n\0=\5\f\4=\4\14\3=\3\15\2B\0\2\1K\0\1\0\rrenderer\nicons\1\0\0\tshow\1\0\0\1\0\4\bgit\2\17folder_arrow\2\tfile\2\vfolder\2\factions\14open_file\1\0\0\1\0\1\17quit_on_open\2\tview\1\0\0\1\0\1\nwidth\3¨\2\nsetup\14nvim-tree\frequire\0" },
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nvim-tree.lua",
     url = "https://github.com/kyazdani42/nvim-tree.lua"
@@ -205,6 +248,11 @@ _G.packer_plugins = {
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/kyazdani42/nvim-web-devicons"
   },
+  ["oceanic-material"] = {
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/oceanic-material",
+    url = "https://github.com/glepnir/oceanic-material"
+  },
   ["packer.nvim"] = {
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/packer.nvim",
@@ -215,8 +263,13 @@ _G.packer_plugins = {
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/plenary.nvim",
     url = "https://github.com/nvim-lua/plenary.nvim"
   },
+  ["rooter.nvim"] = {
+    loaded = true,
+    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/rooter.nvim",
+    url = "https://github.com/ygm2/rooter.nvim"
+  },
   ["telescope.nvim"] = {
-    config = { "\27LJ\2\n´\1\0\0\6\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\3\0005\4\5\0005\5\4\0=\5\6\4=\4\a\3=\3\t\2B\0\2\1K\0\1\0\rdefaults\1\0\0\18layout_config\rvertical\1\0\0\1\0\2\vheight\4Õô≥Ê\fÃô≥ˇ\3\nwidth\4ÊÃô≥\6ÊÃπˇ\3\1\0\1\fpreview\1\nsetup\14telescope\frequire\0" },
+    config = { "\27LJ\2\n´\1\0\0\6\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\3\0005\4\5\0005\5\4\0=\5\6\4=\4\a\3=\3\t\2B\0\2\1K\0\1\0\rdefaults\1\0\0\18layout_config\rvertical\1\0\0\1\0\2\nwidth\4ÊÃô≥\6ÊÃπˇ\3\vheight\4Õô≥Ê\fÃô≥ˇ\3\1\0\1\fpreview\1\nsetup\14telescope\frequire\0" },
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
@@ -232,11 +285,6 @@ _G.packer_plugins = {
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/twilight.nvim",
     url = "https://github.com/folke/twilight.nvim"
   },
-  ["vim-rooter"] = {
-    loaded = true,
-    path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/vim-rooter",
-    url = "https://github.com/airblade/vim-rooter"
-  },
   ["vim-test"] = {
     loaded = true,
     path = "/home/stCarolas/.local/share/nvim/site/pack/packer/start/vim-test",
@@ -245,58 +293,70 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: close-buffers.nvim
-time([[Config for close-buffers.nvim]], true)
-try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18close_buffers\frequire\0", "config", "close-buffers.nvim")
-time([[Config for close-buffers.nvim]], false)
+-- Config for: modes.nvim
+time([[Config for modes.nvim]], true)
+try_loadstring("\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ignore_filetypes\1\3\0\0\rNvimTree\20TelescopePrompt\vcolors\1\0\4\15set_number\2\19set_cursorline\2\17line_opacity\4≥ÊÃô\3≥Êå˛\3\15set_cursor\2\1\0\4\vdelete\f#c75c6a\vvisual\f#9745be\tcopy\f#f5c359\vinsert\f#40cc40\nsetup\nmodes\frequire\0", "config", "modes.nvim")
+time([[Config for modes.nvim]], false)
 -- Config for: nvim-notify
 time([[Config for nvim-notify]], true)
 try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vnotify\frequire\0", "config", "nvim-notify")
 time([[Config for nvim-notify]], false)
--- Config for: telescope.nvim
-time([[Config for telescope.nvim]], true)
-try_loadstring("\27LJ\2\n´\1\0\0\6\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\3\0005\4\5\0005\5\4\0=\5\6\4=\4\a\3=\3\t\2B\0\2\1K\0\1\0\rdefaults\1\0\0\18layout_config\rvertical\1\0\0\1\0\2\vheight\4Õô≥Ê\fÃô≥ˇ\3\nwidth\4ÊÃô≥\6ÊÃπˇ\3\1\0\1\fpreview\1\nsetup\14telescope\frequire\0", "config", "telescope.nvim")
-time([[Config for telescope.nvim]], false)
--- Config for: nvim-tree.lua
-time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\nç\1\0\0\5\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\2B\0\2\1K\0\1\0\factions\14open_file\1\0\0\1\0\1\17quit_on_open\2\tview\1\0\0\1\0\1\nwidth\3¨\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
-time([[Config for nvim-tree.lua]], false)
--- Config for: galaxyline.nvim
-time([[Config for galaxyline.nvim]], true)
-try_loadstring("\27LJ\2\n\20\0\0\1\0\1\0\2'\0\0\0L\0\2\0\t‚ñä Œ\3\0\0\6\1$\0J5\0\1\0-\1\0\0009\1\0\1=\1\2\0-\1\0\0009\1\3\1=\1\4\0-\1\0\0009\1\5\1=\1\6\0-\1\0\0009\1\5\1=\1\a\0-\1\0\0009\1\5\1=\1\b\0-\1\0\0009\1\t\1=\1\n\0-\1\0\0009\1\0\1=\1\v\0-\1\0\0009\1\f\1=\1\r\0-\1\0\0009\1\f\1=\1\14\0-\1\0\0009\1\f\1=\1\15\0-\1\0\0009\1\16\1=\1\17\0-\1\0\0009\1\18\1=\1\19\0-\1\0\0009\1\18\1=\1\20\0-\1\0\0009\1\0\1=\1\21\0-\1\0\0009\1\0\1=\1\22\0-\1\0\0009\1\23\1=\1\24\0-\1\0\0009\1\23\1=\1\25\0-\1\0\0009\1\23\1=\1\26\0-\1\0\0009\1\0\1=\1\27\0-\1\0\0009\1\0\1=\1\28\0006\1\29\0009\1\30\0019\1\31\1'\3 \0006\4\29\0009\4!\0049\4\"\4B\4\1\0028\4\4\0&\3\4\3B\1\2\1'\1#\0L\1\2\0\1¿\nÔåå  \tmode\afn\27hi GalaxyViMode guifg=\17nvim_command\bapi\bvim\6t\6!\ar?\arm\6r\tcyan\ace\acv\aRv\6R\vviolet\aic\vyellow\6\19\6S\6s\vorange\ano\6c\fmagenta\6V\6\22\6v\tblue\6i\ngreen\6n\1\0\0\bred\21\0\0\1\0\1\0\2'\0\0\0L\0\2\0\n Ôëø \20\0\0\1\0\1\0\2'\0\0\0L\0\2\0\t ‚ñä¬\16\1\0\f\0n\0ÿ\0016\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\1\3\0016\2\0\0'\4\4\0B\2\2\0029\3\5\0'\4\6\0005\5\b\0=\5\a\0009\5\t\0035\6\16\0005\a\v\0003\b\n\0=\b\f\a5\b\14\0009\t\r\1>\t\1\b=\b\15\a=\a\17\6>\6\1\0059\5\t\0035\6\22\0005\a\19\0003\b\18\0=\b\f\a5\b\21\0009\t\20\1>\t\1\b=\b\15\a=\a\23\6>\6\2\0059\5\t\0035\6 \0005\a\24\0009\b\25\2=\b\26\a5\b\27\0>\4\2\b=\b\28\a5\b\31\0006\t\0\0'\v\29\0B\t\2\0029\t\30\t>\t\1\b=\b\15\a=\a!\6>\6\3\0059\5\t\0035\6%\0005\a\"\0009\b\25\2=\b\26\a5\b$\0009\t#\1>\t\1\b>\4\2\b=\b\15\a=\a&\6>\6\4\0059\5\t\0035\6)\0005\a'\0005\b(\0=\b\28\a4\b\3\0009\t#\1>\t\1\b>\4\2\b=\b\15\a=\a*\6>\6\5\0059\5\t\0035\6-\0005\a+\0005\b,\0009\t\20\1>\t\1\b=\b\15\a=\a.\6>\6\a\0059\5\t\0035\0062\0005\a/\0005\b1\0009\t0\1>\t\1\b=\b\15\a=\a3\6>\6\b\0059\5\t\0035\0067\0005\a4\0005\b6\0009\t5\1>\t\1\b=\b\15\a=\a8\6>\6\t\0059\5\t\0035\6;\0005\a9\0005\b:\0009\t\r\1>\t\1\b=\b\15\a=\a<\6>\6\v\0059\5=\0035\6D\0005\a?\0003\b>\0=\b\f\a9\b@\2=\b\26\a5\bA\0=\b\28\a5\bC\0009\tB\1>\t\1\b=\b\15\a=\aE\6>\6\2\0059\5=\0035\6H\0005\aF\0009\b@\2=\b\26\a5\bG\0009\tB\1>\t\1\b=\b\15\a=\aI\6>\6\3\0059\5=\0035\6N\0005\aJ\0009\bK\2=\b\26\a5\bM\0009\tL\1>\t\1\b=\b\15\a=\aO\6>\6\4\0059\5=\0035\6S\0005\aP\0009\bK\2=\b\26\a5\bR\0009\tQ\1>\t\1\b=\b\15\a=\aT\6>\6\5\0059\5=\0035\6W\0005\aU\0009\bK\2=\b\26\a5\bV\0009\t\20\1>\t\1\b=\b\15\a=\aX\6>\6\6\0059\5=\0035\6\\\0005\aZ\0003\bY\0=\b\f\a5\b[\0009\t\r\1>\t\1\b=\b\15\a=\a]\6>\6\a\0059\5^\0035\6b\0005\a_\0005\b`\0=\b\28\a5\ba\0009\t\r\1>\t\1\b=\b\15\a=\ac\6>\6\1\0059\5^\0035\6f\0005\ad\0009\b\25\2=\b\26\a5\be\0=\b\15\a=\ag\6>\6\2\0059\5h\0035\6l\0005\ai\0004\b\3\0009\tj\1>\t\1\b6\tk\0>\t\2\b=\b\15\a=\am\6>\6\1\0052\0\0ÄK\0\1\0\15BufferIcon\1\0\0\tnill\afg\1\0\1\rprovider\15BufferIcon\21short_line_right\14SFileName\1\0\0\1\4\0\0\f#88C0D0\0\tbold\1\0\1\rprovider\14SFileName\15BufferType\1\0\0\1\4\0\0\0\0\tbold\1\2\0\0\tNONE\1\0\2\rprovider\17FileTypeName\14separator\6 \20short_line_left\16RainbowBlue\1\0\0\1\0\0\1\0\0\0\15DiffRemove\1\0\0\1\0\0\1\0\2\rprovider\15DiffRemove\ticon\n ÔÖÜ \17DiffModified\1\0\0\1\0\0\vorange\1\0\2\rprovider\17DiffModified\ticon\t Ôßâ\fDiffAdd\1\0\0\1\0\0\ngreen\18hide_in_width\1\0\2\rprovider\fDiffAdd\ticon\f   ÔÉæ \14GitBranch\1\0\0\1\4\0\0\0\0\tbold\1\0\1\rprovider\14GitBranch\fGitIcon\1\0\0\1\4\0\0\0\0\tbold\vviolet\1\2\0\0\tNONE\24check_git_workspace\1\0\1\14separator\6 \0\nright\19DiagnosticInfo\1\0\0\1\0\0\1\0\2\rprovider\19DiagnosticInfo\ticon\n ÔÅö \19DiagnosticHint\1\0\0\1\0\0\tcyan\1\0\2\rprovider\19DiagnosticHint\ticon\n ÔÅ™ \19DiagnosticWarn\1\0\0\1\0\0\vyellow\1\0\2\rprovider\19DiagnosticWarn\ticon\n ÔÅ± \20DiagnosticError\1\0\0\1\0\0\1\0\2\rprovider\20DiagnosticError\ticon\n ÔÅó \rLineInfo\1\0\0\1\2\0\0\tNONE\1\0\2\rprovider\15LineColumn\14separator\6 \rFileName\1\0\0\1\4\0\0\0\0\tbold\rdarkblue\1\0\1\rprovider\rFileName\rFileIcon\1\0\0\1\0\0\24get_file_icon_color!galaxyline.provider_fileinfo\24separator_highlight\1\2\0\0\tNONE\14condition\21buffer_not_empty\1\0\2\rprovider\rFileIcon\14separator\6 \vViMode\1\0\0\1\4\0\0\0\0\tbold\bred\1\0\0\0\15RainbowRed\1\0\0\14highlight\1\0\0\tblue\rprovider\1\0\0\0\tleft\1\4\0\0\rNvimTree\tdbui\vpacker\20short_line_list\f#88C0D0\fsection\25galaxyline.condition\fdefault\21galaxyline.theme\15galaxyline\frequire\0", "config", "galaxyline.nvim")
-time([[Config for galaxyline.nvim]], false)
--- Config for: nightfox.nvim
-time([[Config for nightfox.nvim]], true)
-try_loadstring("\27LJ\2\nπ\2\0\0\6\0\23\0\0286\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\6\0005\4\4\0005\5\3\0=\5\5\4=\4\1\3=\3\b\0025\3\14\0005\4\n\0005\5\t\0=\5\v\0045\5\f\0=\5\r\4=\4\15\3=\3\16\0025\3\18\0005\4\17\0=\4\19\3=\3\20\2B\0\2\0016\0\21\0'\2\22\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\foptions\vstyles\1\0\0\1\0\1\rcomments\vitalic\vgroups\ball\1\0\0\16TSParameter\1\0\1\afg\18palette.white\tType\1\0\0\1\0\1\afg\17palette.cyan\nspecs\1\0\0\1\0\0\fdiag_bg\1\0\0\1\0\1\nerror\bbg1\nsetup\rnightfox\frequire\0", "config", "nightfox.nvim")
-time([[Config for nightfox.nvim]], false)
--- Config for: LuaSnip
-time([[Config for LuaSnip]], true)
-try_loadstring("\27LJ\2\nq\0\3\n\0\a\0\r6\3\0\0009\3\1\0039\3\2\3)\5\0\0B\3\2\0026\4\3\0009\4\4\4\18\b\3\0009\6\4\3'\t\5\0B\6\3\2'\a\6\0D\4\3\0\t^%a+\14%a+%.java\nmatch\vstring\22nvim_buf_get_name\bapi\bvim‹\3\1\0\19\0\17\2E3\0\0\0006\1\1\0'\3\2\0B\1\2\0029\2\3\0019\3\4\0019\4\5\0019\5\6\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\t\0004\r\6\0\18\14\3\0'\16\n\0B\14\2\2>\14\1\r\18\14\5\0\18\16\0\0004\17\0\0004\18\0\0B\14\4\2>\14\2\r\18\14\3\0005\16\v\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\f\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\r\0004\r\6\0\18\14\3\0005\16\14\0B\14\2\2>\14\1\r\18\14\4\0)\16\1\0B\14\2\2>\14\2\r\18\14\3\0005\16\15\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\16\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\1K\0\1\0\1\3\0\0\5\6}\1\3\0\0\t() {\t    \1\3\0\0\n@Test\21public void test\ttest\1\4\0\0\5\t    \6}\1\4\0\0\a {\t    \t    \18public class \nclass\tjava\17add_snippets\18function_node\16insert_node\14text_node\fsnippet\fluasnip\frequire\0\vÄÄ¿ô\4\3ÄÄ¿ô\4\0", "config", "LuaSnip")
-time([[Config for LuaSnip]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-try_loadstring("\27LJ\2\n¿\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\14highlight\1\0\2&additional_vim_regex_highlighting\1\venable\2\21ensure_installed\1\0\1\17sync_install\1\1\3\0\0\tjava\blua\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
--- Config for: gitsigns.nvim
-time([[Config for gitsigns.nvim]], true)
-try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
-time([[Config for gitsigns.nvim]], false)
+-- Config for: Comment.nvim
+time([[Config for Comment.nvim]], true)
+try_loadstring("\27LJ\2\nÅ\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\3\nbasic\2\rextended\1\nextra\2\nextra\1\0\3\nbelow\15<leader>co\nabove\15<leader>cO\beol\15<leader>cA\ropleader\1\0\1\tline\14<leader>c\ftoggler\1\0\1\tline\15<leader>cc\1\0\2\vsticky\2\fpadding\2\nsetup\fComment\frequire\0", "config", "Comment.nvim")
+time([[Config for Comment.nvim]], false)
+-- Config for: hlargs.nvim
+time([[Config for hlargs.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vhlargs\frequire\0", "config", "hlargs.nvim")
+time([[Config for hlargs.nvim]], false)
 -- Config for: twilight.nvim
 time([[Config for twilight.nvim]], true)
 try_loadstring("\27LJ\2\na\0\0\4\0\6\0\t6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\2B\0\2\1K\0\1\0\vexpand\1\2\0\0\vmethod\1\0\1\fcontext\3\1\nsetup\rtwilight\frequire\0", "config", "twilight.nvim")
 time([[Config for twilight.nvim]], false)
+-- Config for: close-buffers.nvim
+time([[Config for close-buffers.nvim]], true)
+try_loadstring("\27LJ\2\n?\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\18close_buffers\frequire\0", "config", "close-buffers.nvim")
+time([[Config for close-buffers.nvim]], false)
+-- Config for: LuaSnip
+time([[Config for LuaSnip]], true)
+try_loadstring("\27LJ\2\nq\0\3\n\0\a\0\r6\3\0\0009\3\1\0039\3\2\3)\5\0\0B\3\2\0026\4\3\0009\4\4\4\18\b\3\0009\6\4\3'\t\5\0B\6\3\2'\a\6\0D\4\3\0\t^%a+\14%a+%.java\nmatch\vstring\22nvim_buf_get_name\bapi\bvimœ\4\1\0\19\0\19\2R3\0\0\0006\1\1\0'\3\2\0B\1\2\0029\2\3\0019\3\4\0019\4\5\0019\5\6\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\t\0004\r\6\0\18\14\3\0'\16\n\0B\14\2\2>\14\1\r\18\14\5\0\18\16\0\0004\17\0\0004\18\0\0B\14\4\2>\14\2\r\18\14\3\0005\16\v\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\f\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\r\0004\r\3\0\18\14\3\0'\16\14\0B\14\2\0?\14\1\0B\n\3\0?\n\1\0B\6\3\0019\6\a\1'\b\b\0004\t\3\0\18\n\2\0'\f\15\0004\r\6\0\18\14\3\0005\16\16\0B\14\2\2>\14\1\r\18\14\4\0)\16\1\0B\14\2\2>\14\2\r\18\14\3\0005\16\17\0B\14\2\2>\14\3\r\18\14\4\0)\16\0\0B\14\2\2>\14\4\r\18\14\3\0005\16\18\0B\14\2\0?\14\0\0B\n\3\0?\n\1\0B\6\3\1K\0\1\0\1\3\0\0\5\6}\1\3\0\0\t() {\t    \1\3\0\0\n@Test\21public void test\ttest5private static final long serialVersionUID = 1L;\18serialversion\1\4\0\0\5\t    \6}\1\4\0\0\a {\t    \t    \18public class \nclass\tjava\17add_snippets\18function_node\16insert_node\14text_node\fsnippet\fluasnip\frequire\0\vÄÄ¿ô\4\3ÄÄ¿ô\4\0", "config", "LuaSnip")
+time([[Config for LuaSnip]], false)
+-- Config for: fidget.nvim
+time([[Config for fidget.nvim]], true)
+try_loadstring("\27LJ\2\n4\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\vfidget\frequire\0", "config", "fidget.nvim")
+time([[Config for fidget.nvim]], false)
+-- Config for: nvim-tree.lua
+time([[Config for nvim-tree.lua]], true)
+try_loadstring("\27LJ\2\n„\1\0\0\6\0\16\0\0196\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\a\0005\4\6\0=\4\b\3=\3\t\0025\3\r\0005\4\v\0005\5\n\0=\5\f\4=\4\14\3=\3\15\2B\0\2\1K\0\1\0\rrenderer\nicons\1\0\0\tshow\1\0\0\1\0\4\bgit\2\17folder_arrow\2\tfile\2\vfolder\2\factions\14open_file\1\0\0\1\0\1\17quit_on_open\2\tview\1\0\0\1\0\1\nwidth\3¨\2\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+time([[Config for nvim-tree.lua]], false)
+-- Config for: telescope.nvim
+time([[Config for telescope.nvim]], true)
+try_loadstring("\27LJ\2\n´\1\0\0\6\0\n\0\r6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\b\0005\3\3\0005\4\5\0005\5\4\0=\5\6\4=\4\a\3=\3\t\2B\0\2\1K\0\1\0\rdefaults\1\0\0\18layout_config\rvertical\1\0\0\1\0\2\nwidth\4ÊÃô≥\6ÊÃπˇ\3\vheight\4Õô≥Ê\fÃô≥ˇ\3\1\0\1\fpreview\1\nsetup\14telescope\frequire\0", "config", "telescope.nvim")
+time([[Config for telescope.nvim]], false)
+-- Config for: nightfox.nvim
+time([[Config for nightfox.nvim]], true)
+try_loadstring("\27LJ\2\nó\5\0\0\6\0'\0,6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\a\0005\3\6\0005\4\4\0005\5\3\0=\5\5\4=\4\1\3=\3\b\0025\3\30\0005\4\n\0005\5\t\0=\5\v\0045\5\f\0=\5\r\0045\5\14\0=\5\15\0045\5\16\0=\5\17\0045\5\18\0=\5\19\0045\5\20\0=\5\21\0045\5\22\0=\5\23\0045\5\24\0=\5\25\0045\5\26\0=\5\27\0045\5\28\0=\5\29\4=\4\31\3=\3 \0025\3\"\0005\4!\0=\4#\3=\3$\2B\0\2\0016\0%\0'\2&\0B\0\2\1K\0\1\0\25colorscheme nightfox\bcmd\foptions\vstyles\1\0\0\1\0\1\rcomments\vitalic\vgroups\ball\1\0\0\31DiagnosticVirtualTextError\1\0\1\abg\bbg1\30DiagnosticVirtualTextHint\1\0\1\abg\bbg1\30DiagnosticVirtualTextInfo\1\0\1\abg\bbg1\30DiagnosticVirtualTextWarn\1\0\1\abg\bbg1\19DiagnosticHint\1\0\1\abg\bbg1\19DiagnosticInfo\1\0\1\abg\bbg1\19DiagnosticWarn\1\0\1\abg\bbg1\20DiagnosticError\1\0\1\abg\bbg1\16TSParameter\1\0\1\afg\18palette.white\tType\1\0\0\1\0\1\afg\17palette.cyan\nspecs\1\0\0\1\0\0\fdiag_bg\1\0\0\1\0\5\twarn\bbg1\nhints\bbg1\fwarning\bbg1\tinfo\bbg1\nerror\bbg1\nsetup\rnightfox\frequire\0", "config", "nightfox.nvim")
+time([[Config for nightfox.nvim]], false)
+-- Config for: galaxyline.nvim
+time([[Config for galaxyline.nvim]], true)
+try_loadstring("\27LJ\2\n\20\0\0\1\0\1\0\2'\0\0\0L\0\2\0\t‚ñä Œ\3\0\0\6\1$\0J5\0\1\0-\1\0\0009\1\0\1=\1\2\0-\1\0\0009\1\3\1=\1\4\0-\1\0\0009\1\5\1=\1\6\0-\1\0\0009\1\5\1=\1\a\0-\1\0\0009\1\5\1=\1\b\0-\1\0\0009\1\t\1=\1\n\0-\1\0\0009\1\0\1=\1\v\0-\1\0\0009\1\f\1=\1\r\0-\1\0\0009\1\f\1=\1\14\0-\1\0\0009\1\f\1=\1\15\0-\1\0\0009\1\16\1=\1\17\0-\1\0\0009\1\18\1=\1\19\0-\1\0\0009\1\18\1=\1\20\0-\1\0\0009\1\0\1=\1\21\0-\1\0\0009\1\0\1=\1\22\0-\1\0\0009\1\23\1=\1\24\0-\1\0\0009\1\23\1=\1\25\0-\1\0\0009\1\23\1=\1\26\0-\1\0\0009\1\0\1=\1\27\0-\1\0\0009\1\0\1=\1\28\0006\1\29\0009\1\30\0019\1\31\1'\3 \0006\4\29\0009\4!\0049\4\"\4B\4\1\0028\4\4\0&\3\4\3B\1\2\1'\1#\0L\1\2\0\1¿\nÔåå  \tmode\afn\27hi GalaxyViMode guifg=\17nvim_command\bapi\bvim\6t\6!\ar?\arm\6r\tcyan\ace\acv\aRv\6R\vviolet\aic\vyellow\6\19\6S\6s\vorange\ano\6c\fmagenta\6V\6\22\6v\tblue\6i\ngreen\6n\1\0\0\bred\21\0\0\1\0\1\0\2'\0\0\0L\0\2\0\n Ôëø \20\0\0\1\0\1\0\2'\0\0\0L\0\2\0\t ‚ñä¬\16\1\0\f\0n\0ÿ\0016\0\0\0'\2\1\0B\0\2\0026\1\0\0'\3\2\0B\1\2\0029\1\3\0016\2\0\0'\4\4\0B\2\2\0029\3\5\0'\4\6\0005\5\b\0=\5\a\0009\5\t\0035\6\16\0005\a\v\0003\b\n\0=\b\f\a5\b\14\0009\t\r\1>\t\1\b=\b\15\a=\a\17\6>\6\1\0059\5\t\0035\6\22\0005\a\19\0003\b\18\0=\b\f\a5\b\21\0009\t\20\1>\t\1\b=\b\15\a=\a\23\6>\6\2\0059\5\t\0035\6 \0005\a\24\0009\b\25\2=\b\26\a5\b\27\0>\4\2\b=\b\28\a5\b\31\0006\t\0\0'\v\29\0B\t\2\0029\t\30\t>\t\1\b=\b\15\a=\a!\6>\6\3\0059\5\t\0035\6%\0005\a\"\0009\b\25\2=\b\26\a5\b$\0009\t#\1>\t\1\b>\4\2\b=\b\15\a=\a&\6>\6\4\0059\5\t\0035\6)\0005\a'\0005\b(\0=\b\28\a4\b\3\0009\t#\1>\t\1\b>\4\2\b=\b\15\a=\a*\6>\6\5\0059\5\t\0035\6-\0005\a+\0005\b,\0009\t\20\1>\t\1\b=\b\15\a=\a.\6>\6\a\0059\5\t\0035\0062\0005\a/\0005\b1\0009\t0\1>\t\1\b=\b\15\a=\a3\6>\6\b\0059\5\t\0035\0067\0005\a4\0005\b6\0009\t5\1>\t\1\b=\b\15\a=\a8\6>\6\t\0059\5\t\0035\6;\0005\a9\0005\b:\0009\t\r\1>\t\1\b=\b\15\a=\a<\6>\6\v\0059\5=\0035\6D\0005\a?\0003\b>\0=\b\f\a9\b@\2=\b\26\a5\bA\0=\b\28\a5\bC\0009\tB\1>\t\1\b=\b\15\a=\aE\6>\6\2\0059\5=\0035\6H\0005\aF\0009\b@\2=\b\26\a5\bG\0009\tB\1>\t\1\b=\b\15\a=\aI\6>\6\3\0059\5=\0035\6N\0005\aJ\0009\bK\2=\b\26\a5\bM\0009\tL\1>\t\1\b=\b\15\a=\aO\6>\6\4\0059\5=\0035\6S\0005\aP\0009\bK\2=\b\26\a5\bR\0009\tQ\1>\t\1\b=\b\15\a=\aT\6>\6\5\0059\5=\0035\6W\0005\aU\0009\bK\2=\b\26\a5\bV\0009\t\20\1>\t\1\b=\b\15\a=\aX\6>\6\6\0059\5=\0035\6\\\0005\aZ\0003\bY\0=\b\f\a5\b[\0009\t\r\1>\t\1\b=\b\15\a=\a]\6>\6\a\0059\5^\0035\6b\0005\a_\0005\b`\0=\b\28\a5\ba\0009\t\r\1>\t\1\b=\b\15\a=\ac\6>\6\1\0059\5^\0035\6f\0005\ad\0009\b\25\2=\b\26\a5\be\0=\b\15\a=\ag\6>\6\2\0059\5h\0035\6l\0005\ai\0004\b\3\0009\tj\1>\t\1\b6\tk\0>\t\2\b=\b\15\a=\am\6>\6\1\0052\0\0ÄK\0\1\0\15BufferIcon\1\0\0\tnill\afg\1\0\1\rprovider\15BufferIcon\21short_line_right\14SFileName\1\0\0\1\4\0\0\f#88C0D0\0\tbold\1\0\1\rprovider\14SFileName\15BufferType\1\0\0\1\4\0\0\0\0\tbold\1\2\0\0\tNONE\1\0\2\rprovider\17FileTypeName\14separator\6 \20short_line_left\16RainbowBlue\1\0\0\1\0\0\1\0\0\0\15DiffRemove\1\0\0\1\0\0\1\0\2\rprovider\15DiffRemove\ticon\n ÔÖÜ \17DiffModified\1\0\0\1\0\0\vorange\1\0\2\rprovider\17DiffModified\ticon\t Ôßâ\fDiffAdd\1\0\0\1\0\0\ngreen\18hide_in_width\1\0\2\rprovider\fDiffAdd\ticon\f   ÔÉæ \14GitBranch\1\0\0\1\4\0\0\0\0\tbold\1\0\1\rprovider\14GitBranch\fGitIcon\1\0\0\1\4\0\0\0\0\tbold\vviolet\1\2\0\0\tNONE\24check_git_workspace\1\0\1\14separator\6 \0\nright\19DiagnosticInfo\1\0\0\1\0\0\1\0\2\rprovider\19DiagnosticInfo\ticon\n ÔÅö \19DiagnosticHint\1\0\0\1\0\0\tcyan\1\0\2\rprovider\19DiagnosticHint\ticon\n ÔÅ™ \19DiagnosticWarn\1\0\0\1\0\0\vyellow\1\0\2\rprovider\19DiagnosticWarn\ticon\n ÔÅ± \20DiagnosticError\1\0\0\1\0\0\1\0\2\rprovider\20DiagnosticError\ticon\n ÔÅó \rLineInfo\1\0\0\1\2\0\0\tNONE\1\0\2\rprovider\15LineColumn\14separator\6 \rFileName\1\0\0\1\4\0\0\0\0\tbold\rdarkblue\1\0\1\rprovider\rFileName\rFileIcon\1\0\0\1\0\0\24get_file_icon_color!galaxyline.provider_fileinfo\24separator_highlight\1\2\0\0\tNONE\14condition\21buffer_not_empty\1\0\2\rprovider\rFileIcon\14separator\6 \vViMode\1\0\0\1\4\0\0\0\0\tbold\bred\1\0\0\0\15RainbowRed\1\0\0\14highlight\1\0\0\tblue\rprovider\1\0\0\0\tleft\1\4\0\0\rNvimTree\tdbui\vpacker\20short_line_list\f#88C0D0\fsection\25galaxyline.condition\fdefault\21galaxyline.theme\15galaxyline\frequire\0", "config", "galaxyline.nvim")
+time([[Config for galaxyline.nvim]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+try_loadstring("\27LJ\2\n¿\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\14highlight\1\0\2&additional_vim_regex_highlighting\1\venable\2\21ensure_installed\1\0\1\17sync_install\1\1\3\0\0\tjava\blua\nsetup\28nvim-treesitter.configs\frequire\0", "config", "nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
 -- Config for: cinnamon.nvim
 time([[Config for cinnamon.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rcinnamon\frequire\0", "config", "cinnamon.nvim")
 time([[Config for cinnamon.nvim]], false)
--- Config for: modes.nvim
-time([[Config for modes.nvim]], true)
-try_loadstring("\27LJ\2\n¸\1\0\0\4\0\b\0\v6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\4\0005\3\3\0=\3\5\0025\3\6\0=\3\a\2B\0\2\1K\0\1\0\21ignore_filetypes\1\3\0\0\rNvimTree\20TelescopePrompt\vcolors\1\0\4\15set_number\2\19set_cursorline\2\17line_opacity\4≥ÊÃô\3≥Êå˛\3\15set_cursor\2\1\0\4\tcopy\f#f5c359\vdelete\f#c75c6a\vvisual\f#9745be\vinsert\f#40cc40\nsetup\nmodes\frequire\0", "config", "modes.nvim")
-time([[Config for modes.nvim]], false)
--- Config for: Comment.nvim
-time([[Config for Comment.nvim]], true)
-try_loadstring("\27LJ\2\nÅ\2\0\0\4\0\f\0\0156\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0005\3\4\0=\3\5\0025\3\6\0=\3\a\0025\3\b\0=\3\t\0025\3\n\0=\3\v\2B\0\2\1K\0\1\0\rmappings\1\0\3\nbasic\2\rextended\1\nextra\2\nextra\1\0\3\nabove\15<leader>cO\beol\15<leader>cA\nbelow\15<leader>co\ropleader\1\0\1\tline\14<leader>c\ftoggler\1\0\1\tline\15<leader>cc\1\0\2\fpadding\2\vsticky\2\nsetup\fComment\frequire\0", "config", "Comment.nvim")
-time([[Config for Comment.nvim]], false)
+-- Config for: nvim-hlslens
+time([[Config for nvim-hlslens]], true)
+try_loadstring("\27LJ\2\nV\0\0\3\0\4\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0005\2\3\0B\0\2\1K\0\1\0\1\0\1\23nearest_float_when\valways\nsetup\fhlslens\frequire\0", "config", "nvim-hlslens")
+time([[Config for nvim-hlslens]], false)
+-- Config for: gitsigns.nvim
+time([[Config for gitsigns.nvim]], true)
+try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
+time([[Config for gitsigns.nvim]], false)
 if should_profile then save_profiles() end
 
 end)

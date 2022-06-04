@@ -24,6 +24,12 @@ use({
 		})
 
 		ls.add_snippets("java", {
+			s("serialversion", {
+				t("private static final long serialVersionUID = 1L;"),
+			})
+		})
+
+		ls.add_snippets("java", {
 			s("test", {
 				t({"@Test","public void test"}),i(1),t({"() {","    "}),
 				i(0),

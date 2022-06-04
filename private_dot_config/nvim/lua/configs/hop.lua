@@ -1,7 +1,11 @@
 require('configs.common_fn')
 
-use 'phaazon/hop.nvim'
-require'hop'.setup()
+use({
+	'phaazon/hop.nvim',
+	config = function ()
+		require('hop').setup({})
+	end
+})
 
 vim.api.nvim_set_keymap('n', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false, inclusive_jump = false })<cr>", {})
 vim.api.nvim_set_keymap('v', 'f', "<cmd>lua require'hop'.hint_char1({ direction = require'hop.hint'.HintDirection.AFTER_CURSOR, current_line_only = false, inclusive_jump = false })<cr>", {})

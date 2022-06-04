@@ -11,16 +11,19 @@ use({
 				open_file = {
 					quit_on_open = true
 				}
+			},
+			renderer = {
+				icons = {
+					show = {
+						file = true,
+						folder = true,
+						folder_arrow = true,
+						git = true,
+					},
+				}
 			}
 		})
 	end
 })
-
-vim.g.nvim_tree_show_icons = {
-	git = 1,
-	folders = 1,
-	files = 1,
-	folder_arrows = 1,
-}
 
 map('<leader>n','<cmd> lua require"nvim-tree".find_file(true)<CR>')

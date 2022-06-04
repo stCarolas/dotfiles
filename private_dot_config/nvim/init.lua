@@ -33,8 +33,27 @@ require('configs.diffview')
 -- utils
 require('configs.term')
 require('configs.close_buffers')
-use 'airblade/vim-rooter'
 require('configs.notify')
 use 'yamatsum/nvim-nonicons'
 require('configs.twilight')
 require('configs.galaxyline')
+use {
+	'kevinhwang91/nvim-hlslens',
+	config = function() require('hlslens').setup({
+		nearest_float_when = 'always'
+	}) end
+}
+use {
+	'j-hui/fidget.nvim',
+	config = function() require('fidget').setup() end
+}
+use {
+	'm-demare/hlargs.nvim',
+	config = function() require('hlargs').setup() end
+}
+use 'folke/lsp-colors.nvim'
+use 'dstein64/nvim-scrollview'
+use 'kassio/neoterm'
+use 'mfussenegger/nvim-dap'
+use 'ygm2/rooter.nvim'
+use 'glepnir/oceanic-material'

@@ -1,6 +1,9 @@
 require('configs.common_fn')
 
-use 'neovim/nvim-lspconfig'
+use ({
+	'neovim/nvim-lspconfig',
+	config = function () require'lspconfig'.sumneko_lua.setup({}) end
+})
 use 'mfussenegger/nvim-jdtls'
 use ({ "folke/trouble.nvim", config = function ()
 	require("trouble").setup {

@@ -15,13 +15,13 @@ local config = {
     '-Declipse.product=org.eclipse.jdt.ls.core.product',
     '-Dlog.protocol=true',
     '-Dlog.level=ALL',
-    '-Xms2g',
+    '-Xms4g',
     '--add-modules=ALL-SYSTEM',
     '--add-opens', 'java.base/java.util=ALL-UNNAMED',
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
-		'-javaagent:/home/stCarolas/Coding/libs/lombok.jar',
-    '-jar', '/home/stCarolas/Coding/libs/jdt/plugins/org.eclipse.equinox.launcher.jar',
-    '-configuration', '/home/stCarolas/Coding/libs/jdt/config_linux',
+		'-javaagent:' .. os.getenv("HOME") .. '/Coding/libs/lombok.jar',
+    '-jar', os.getenv("HOME") .. '/Coding/libs/jdt/plugins/org.eclipse.equinox.launcher.jar',
+    '-configuration', os.getenv("HOME") .. '/Coding/libs/jdt/config_linux',
     '-data', workspace_dir
   },
   root_dir = require('jdtls.setup').find_root({'.git'}),
@@ -32,7 +32,3 @@ local config = {
 }
 
 require('jdtls').start_or_attach(config)
-
--- vim.api.nvim_create_autocmd({"InsertLeave"}, {
--- 	command = "Neoformat"
--- })

@@ -52,21 +52,21 @@ use({
 				['<C-e>'] = cmp.mapping.abort(),
 				['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 			}),
-			formatting = {
-				format = function(entry, vim_item)
-					-- Kind icons
-					vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
-					-- Source
-					vim_item.menu = ({
-						buffer = "[Buffer]",
-						nvim_lsp = "[LSP]",
-						luasnip = "[LuaSnip]",
-						nvim_lua = "[Lua]",
-						latex_symbols = "[LaTeX]",
-					})[entry.source.name]
-					return vim_item
-				end
-			},
+			-- formatting = {
+			-- 	format = function(entry, vim_item)
+			-- 		-- Kind icons
+			-- 		vim_item.kind = string.format('%s %s', kind_icons[vim_item.kind], vim_item.kind) -- This concatonates the icons with the name of the item kind
+			-- 		-- Source
+			-- 		vim_item.menu = ({
+			-- 			buffer = "[Buffer]",
+			-- 			nvim_lsp = "[LSP]",
+			-- 			luasnip = "[LuaSnip]",
+			-- 			nvim_lua = "[Lua]",
+			-- 			latex_symbols = "[LaTeX]",
+			-- 		})[entry.source.name]
+			-- 		return vim_item
+			-- 	end
+			-- },
 			sources = cmp.config.sources({
 				-- { name = 'cmp_tabnine', group = 2 },
 				-- { name = 'copilot', group = 2 },

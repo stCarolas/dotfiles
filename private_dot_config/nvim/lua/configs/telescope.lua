@@ -11,6 +11,7 @@ use({
 				},
 			},
 		})
+		require("telescope").load_extension('command_center')
 	end
 })
 

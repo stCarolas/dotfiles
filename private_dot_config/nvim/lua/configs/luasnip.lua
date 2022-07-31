@@ -36,6 +36,20 @@ use({
 				t({"","}"})
 			})
 		})
+
+		ls.add_snippets("java", {
+			s("aseq", {
+				t({"assertEquals(expected, actual);"})
+			})
+		})
+
+		ls.add_snippets("java", {
+			s("build", {
+				t({"builder()","    "}),
+				i(0),
+				t({".build()"}),
+			})
+		})
 	end
 })
 

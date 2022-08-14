@@ -18,6 +18,7 @@ use {
 
 use 'mfussenegger/nvim-jdtls'
 use ({ "folke/trouble.nvim",
+
 	config = function ()
 		require("trouble").setup {
 			-- your configuration comes here
@@ -32,22 +33,25 @@ use ({ "folke/trouble.nvim",
 	end
 })
 
-use({
-  "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-  config = function()
-    require("lsp_lines").setup()
-
-		-- local orig_virtual_lines_handler = vim.diagnostic.handlers.virtual_lines
-  --
-		-- vim.diagnostic.handlers.virtual_lines = {
-		-- 		show = function(ns, bufnr, _, opts)
-		-- 			local diagnostics = vim.diagnostic.get(bufnr, { severity = {min=vim.diagnostic.severity.WARN} })
-		-- 			orig_virtual_lines_handler.show(ns, bufnr, diagnostics, opts)
-		-- 		end
-		-- }
-
-  end,
-})
+-- use({
+--   "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
+--   config = function()
+--     require("lsp_lines").setup()
+--
+-- 		local orig_virtual_lines_handler = vim.diagnostic.handlers.virtual_lines
+--
+-- 		vim.diagnostic.handlers.virtual_lines = {
+-- 				hide = function(ns, bufnr)
+-- 					orig_virtual_lines_handler.hide(ns,bufnr)
+-- 				end,
+-- 				show = function(ns, bufnr, _, opts)
+-- 					local diagnostics = vim.diagnostic.get(bufnr, { severity = {min=vim.diagnostic.severity.WARN} })
+-- 					orig_virtual_lines_handler.show(ns, bufnr, diagnostics, opts)
+-- 				end
+-- 		}
+--
+--   end,
+-- })
 
 alias('ja','lua vim.lsp.buf.code_action()')
 alias('jh','lua vim.diagnostic.open_float()')
@@ -57,6 +61,6 @@ alias('jt','lua vim.lsp.buf.declaration()')
 map("<leader>xx", "<cmd>TroubleToggle<cr>")
 
 vim.diagnostic.config({
-  virtual_text = false,
+  virtual_text = true,
 	signs = false,
 })

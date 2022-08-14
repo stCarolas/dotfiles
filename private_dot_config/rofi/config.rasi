@@ -1,5 +1,5 @@
 configuration {
-	font: "Victor Mono NF 12";
+	font: "Victor Mono NF 16";
 }
 
 * {

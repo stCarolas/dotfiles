@@ -2,10 +2,32 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.expandtab = true
 
+local query = vim.treesitter.query.parse_query('java','((package_declaration) . (import_declaration) @first_import (import_declaration)* (import_declaration)? @last_import . (class_declaration))')
+local parser = vim.treesitter.get_parser(0, 'java')
+local tstree = parser:parse()[1]
+local first_import = 0
+local last_import = 0
+for id, node, metadata in query:iter_captures(tstree:root(),0) do
+  local name = query.captures[id] -- name of the capture in the query
+  local row1, col1, row2, col2 = node:range() -- range of the capture
+  if name == 'first_import' then first_import = row1 + 1 end
+  if name == 'last_import' then last_import = row1 + 1 end
+  -- local row1, col1, row2, col2 = node:range() -- range of the capture
+    -- print(row1, col1)
+end
+vim.cmd(first_import .. "," .. last_import .. "fold")
+
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 local workspace_dir = '/tmp/' .. project_name
 
+local capabilities = vim.lsp.protocol.make_client_capabilities()
+capabilities.textDocument.foldingRange = {
+    dynamicRegistration = false,
+    lineFoldingOnly = true
+}
+
 local config = {
+	-- capabilities = capabilities,
   cmd = {
     'java',
     '-Declipse.application=org.eclipse.jdt.ls.core.id1',
@@ -46,3 +68,5 @@ vim.cmd 'hi TSFunction guifg=#5d6f74'
 vim.cmd 'hi TSField guifg=#9acccc'
 vim.cmd 'hi TSParameter guifg=#9acccc'
 vim.cmd 'hi TSString guifg=#3b6392 gui=italic'
+
+-- local query = vim.treesitter.query.parse_query('java','((marker_annotation name: (identifier) @capture )(#match? @capture "Log4j2"))')

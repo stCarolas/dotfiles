@@ -6,11 +6,17 @@ use {
 		require'lspconfig'.sumneko_lua.setup{
 			settings = {
         Lua = {
-            diagnostics = {
-                globals = { 'vim' }
-            }
+					diagnostics = {
+						globals = { 'vim' }
+					},
+					hint = {
+						enable = true,
+					},
         }
-			}
+			},
+			on_attach = function(c, b)
+				require'inlay-hints'.on_attach(c, b)
+			end,
 		}
 		require'lspconfig'.pylsp.setup{}
 	end
@@ -21,37 +27,14 @@ use ({ "folke/trouble.nvim",
 
 	config = function ()
 		require("trouble").setup {
-			-- your configuration comes here
-			-- or leave it empty to use the default settings
-			-- refer to the configuration section below
 			auto_preview = false,
-			auto_open = false, -- automatically open the list when you have diagnostics
-			auto_close = true, -- automatically close the list when you have no diagnostics
-			auto_fold = false, -- automatically fold a file trouble list at creation
+			auto_open = false,
+			auto_close = true,
+			auto_fold = false,
 			auto_jump = {},
 		}
 	end
 })
-
--- use({
---   "https://git.sr.ht/~whynothugo/lsp_lines.nvim",
---   config = function()
---     require("lsp_lines").setup()
---
--- 		local orig_virtual_lines_handler = vim.diagnostic.handlers.virtual_lines
---
--- 		vim.diagnostic.handlers.virtual_lines = {
--- 				hide = function(ns, bufnr)
--- 					orig_virtual_lines_handler.hide(ns,bufnr)
--- 				end,
--- 				show = function(ns, bufnr, _, opts)
--- 					local diagnostics = vim.diagnostic.get(bufnr, { severity = {min=vim.diagnostic.severity.WARN} })
--- 					orig_virtual_lines_handler.show(ns, bufnr, diagnostics, opts)
--- 				end
--- 		}
---
---   end,
--- })
 
 alias('ja','lua vim.lsp.buf.code_action()')
 alias('jh','lua vim.diagnostic.open_float()')
@@ -63,4 +46,11 @@ map("<leader>xx", "<cmd>TroubleToggle<cr>")
 vim.diagnostic.config({
   virtual_text = true,
 	signs = false,
+})
+
+use({
+	'simrat39/inlay-hints.nvim',
+	config = function ()
+		require("inlay-hints").setup()
+	end
 })

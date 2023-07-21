@@ -7,7 +7,7 @@ use {
 			provider_selector = function(_, _)
 					return {'treesitter', 'indent'}
 			end,
-			enable_fold_end_virt_text = true
+			enable_get_fold_virt_text = true
 		})
 		vim.keymap.set('n', 'zR', require('ufo').openAllFolds)
 		vim.keymap.set('n', 'zM', require('ufo').closeAllFolds)

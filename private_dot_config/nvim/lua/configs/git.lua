@@ -23,4 +23,11 @@ use({
 	end
 })
 
+use {
+	'lewis6991/satellite.nvim',
+	config = function ()
+		require('satellite').setup()
+	end
+}
+
 alias("gst", "lua require'neogit'.open({ kind = 'replace' })")

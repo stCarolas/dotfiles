@@ -19,3 +19,4 @@ use = require'packer'.use
 use 'wbthomason/packer.nvim'
 use 'nvim-lua/plenary.nvim'
 use 'kyazdani42/nvim-web-devicons'
+use {"ellisonleao/carbon-now.nvim", config = function() require('carbon-now').setup() end}

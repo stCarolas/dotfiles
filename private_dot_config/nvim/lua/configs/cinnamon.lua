@@ -1,4 +1,5 @@
-require('configs.common_fn')
+local use = require'packer'.use
+
 use {
   'declancm/cinnamon.nvim',
 	config = function() require('cinnamon').setup() end

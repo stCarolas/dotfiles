@@ -14,29 +14,25 @@ end
 
 use 'gpanders/editorconfig.nvim'
 
-use 'github/copilot.vim'
-
 use {
 	'kevinhwang91/nvim-hlslens',
 	config = function() require('hlslens').setup({
 		nearest_float_when = 'always'
 	}) end
 }
-use {
-	'j-hui/fidget.nvim',
-	config = function() require('fidget').setup() end
-}
 use 'dstein64/nvim-scrollview'
 
-use {
-	'glepnir/mcc.nvim',
-	config = function()
-		require('mcc').setup({
-			java = {
-					{'-','->','-'}
-				}
-		})
-	end
-}
+-- use 'github/copilot.vim'
+
+-- use {
+-- 	'glepnir/mcc.nvim',
+-- 	config = function()
+-- 		require('mcc').setup({
+-- 			java = {
+-- 					{'-','->','-'}
+-- 				}
+-- 		})
+-- 	end
+-- }
 
 use "folke/lua-dev.nvim"

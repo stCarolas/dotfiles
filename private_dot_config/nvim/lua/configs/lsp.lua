@@ -3,7 +3,8 @@ require('configs.common_fn')
 use {
 	'neovim/nvim-lspconfig',
 	config = function ()
-		require'lspconfig'.sumneko_lua.setup{
+		require'lspconfig'.kotlin_language_server.setup{}
+		require'lspconfig'.lua_ls.setup{
 			settings = {
         Lua = {
 					diagnostics = {
@@ -20,6 +21,12 @@ use {
 		}
 		require'lspconfig'.pylsp.setup{}
 	end
+}
+
+use {
+	'j-hui/fidget.nvim',
+	tag = 'legacy',
+	config = function() require('fidget').setup() end
 }
 
 use 'mfussenegger/nvim-jdtls'
@@ -54,3 +61,4 @@ use({
 		require("inlay-hints").setup()
 	end
 })
+vim.lsp.set_log_level("info")

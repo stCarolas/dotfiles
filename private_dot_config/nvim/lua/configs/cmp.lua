@@ -30,7 +30,7 @@ local kind_icons = {
 
 use 'hrsh7th/cmp-nvim-lsp'
 use 'saadparwaiz1/cmp_luasnip'
-use {'tzachar/cmp-tabnine', run='./install.sh'}
+-- use {'tzachar/cmp-tabnine', run='./install.sh'}
 use({
 	'hrsh7th/nvim-cmp',
 	config = function ()

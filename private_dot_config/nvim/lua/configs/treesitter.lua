@@ -1,7 +1,7 @@
 local use = require'packer'.use
 
 use 'nvim-treesitter/nvim-treesitter-textobjects'
-use 'nvim-treesitter/playground'
+-- use 'nvim-treesitter/playground'
 use({
 	'nvim-treesitter/nvim-treesitter',
 	config = function ()

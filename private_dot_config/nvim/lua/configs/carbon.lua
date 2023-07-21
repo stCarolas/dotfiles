@@ -1,4 +1,5 @@
 local use = require'packer'.use
+
 use ({ 'SidOfc/carbon.nvim',
 	config = function ()
 		require'carbon'.setup({actions = { edit = 'o', create = 'a'}})

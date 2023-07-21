@@ -1,5 +1,11 @@
 local use = require'packer'.use
-use 'stCarolas/boo-colorscheme-nvim'
+
+use { 'EdenEast/nightfox.nvim',
+	config = function ()
+		vim.cmd 'colorscheme nightfox'
+		vim.cmd 'hi Hlargs gui=bold'
+	end
+}
 use { 'm-demare/hlargs.nvim',
 	config = function()
 		require('hlargs').setup({
@@ -24,9 +30,6 @@ use { 'lcheylus/overlength.nvim',
 	end
 }
 
-pcall(vim.cmd,'colorscheme boo')
-vim.cmd 'hi Hlargs gui=bold'
-vim.cmd 'hi DiagnosticUnderlineInfo gui=italic'
-vim.cmd 'hi DiffAdd guibg=#114020'
-vim.cmd 'hi DiffDelete guibg=#653157'
-
+-- vim.cmd 'hi DiagnosticUnderlineInfo gui=italic'
+-- vim.cmd 'hi DiffAdd guibg=#114020'
+-- vim.cmd 'hi DiffDelete guibg=#653157'

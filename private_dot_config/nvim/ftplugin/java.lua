@@ -2,7 +2,14 @@ vim.opt.shiftwidth = 4
 vim.opt.tabstop = 4
 vim.opt.expandtab = true
 
-local query = vim.treesitter.query.parse_query('java','((package_declaration) . (import_declaration) @first_import (import_declaration)* (import_declaration)? @last_import . (class_declaration))')
+local query = vim.treesitter.query.parse('java',[[
+	((package_declaration) . 
+	(import_declaration) @first_import
+	(import_declaration)*
+	(import_declaration)? @last_import .
+	(class_declaration))
+]])
+
 local parser = vim.treesitter.get_parser(0, 'java')
 local tstree = parser:parse()[1]
 local first_import = 0
@@ -69,4 +76,6 @@ vim.cmd 'hi TSField guifg=#9acccc'
 vim.cmd 'hi TSParameter guifg=#9acccc'
 vim.cmd 'hi TSString guifg=#3b6392 gui=italic'
 
--- local query = vim.treesitter.query.parse_query('java','((marker_annotation name: (identifier) @capture )(#match? @capture "Log4j2"))')
+query = vim.treesitter.query.parse('java',[[
+	((marker_annotation name: (identifier) @capture )(#match? @capture "Log4j2"))
+]])

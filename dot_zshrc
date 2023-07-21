@@ -16,7 +16,7 @@ zstyle ':completion:*' rehash true
 
 function projects() {
     project=$(ls ~/Coding/projects/ | fzf)
-    project="/home/stCarolas/Coding/projects/$project"
+    project="~/Coding/projects/$project"
     cd $project
 }
 alias pr=projects

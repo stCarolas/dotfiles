@@ -17,7 +17,7 @@ use {
 		local function opts(desc)
 			return { desc = 'nvim-tree: ' .. desc, buffer = bufnr, noremap = true, silent = true, nowait = true }
 		end
-		vim.keymap.set('n','<leader>n', require'nvim-tree.api'.tree.toggle, opts('Open') )
+		vim.keymap.set('n','<leader>n', function() require'nvim-tree.api'.tree.toggle({ current_window = true }) end, opts('Open') )
 	end,
   requires = {
     'nvim-tree/nvim-web-devicons', -- optional

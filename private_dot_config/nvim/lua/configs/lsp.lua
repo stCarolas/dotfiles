@@ -4,6 +4,7 @@ use {
 	'neovim/nvim-lspconfig',
 	config = function ()
 		require'lspconfig'.kotlin_language_server.setup{}
+		require'lspconfig'.tsserver.setup{}
 		require'lspconfig'.lua_ls.setup{
 			settings = {
         Lua = {

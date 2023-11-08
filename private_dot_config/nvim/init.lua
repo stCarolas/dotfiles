@@ -17,7 +17,8 @@ use 'gpanders/editorconfig.nvim'
 use {
 	'kevinhwang91/nvim-hlslens',
 	config = function() require('hlslens').setup({
-		nearest_float_when = 'always'
+		nearest_float_when = 'always',
+		calm_down = true
 	}) end
 }
 use 'dstein64/nvim-scrollview'

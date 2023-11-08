@@ -39,3 +39,5 @@ fzf-history() {
 }
 zle -N fzf-history
 bindkey '^R' fzf-history
+
+export FZF_DEFAULT_COMMAND="rg --files"

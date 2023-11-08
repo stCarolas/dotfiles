@@ -3,7 +3,7 @@ local use =require'packer'.use
 use {
   "gfeiyou/command-center.nvim",
 	config = function ()
-		local command_center = require("command_center")
+		local command_center = require("commander")
 		local context_actions = require("configs.context-actions")
 		command_center.add({
 			{

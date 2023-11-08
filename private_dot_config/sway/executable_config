@@ -12,7 +12,7 @@
   set $right l
 
   set $term foot
-  set $menu ~/.local/bin/nwg-drawer
+  set $menu nwggrid
 
   set $mod Mod4
   set $altmod Mod1

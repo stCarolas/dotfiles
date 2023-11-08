@@ -1,5 +1,5 @@
-vim.opt.shiftwidth = 4
-vim.opt.tabstop = 4
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
 vim.opt.expandtab = true
 
 local query = vim.treesitter.query.parse('java',[[

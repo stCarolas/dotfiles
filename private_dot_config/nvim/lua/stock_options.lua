@@ -13,3 +13,5 @@ vim.g.neoterm_shell = "/usr/bin/zsh"
 cmd 'set clipboard+=unnamedplus'
 cmd 'set laststatus=3'
 map(';',':')
+map('J','<cmd>bnext<cr>')
+map('K','<cmd>bprev<cr>')

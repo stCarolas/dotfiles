@@ -57,6 +57,12 @@ use({ 'L3MON4D3/LuaSnip',
 				t({"builder()"}), i(0), t({".build()"}),
 			})
 		})
+
+		ls.add_snippets("typescriptreact", {
+			s("div", {
+				t({"<div>"}), i(0), t({"</div>"}),
+			})
+		})
 	end
 })
 

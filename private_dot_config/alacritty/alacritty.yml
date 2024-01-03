@@ -15,13 +15,12 @@ scrolling:
 
 font:
   normal:
-    # family: VictorMono NF
-    family:  Monoid Nerd Font
+    family: IntoneMono Nerd Font Mono
   bold:
-    family:  Monoid Nerd Font
+    family: IntoneMono Nerd Font Mono
     style: Bold
   italic:
-    family:  Monoid Nerd Font
+    family: IntoneMono Nerd Font Mono
     style: Italic
   size: 16.0
 
@@ -48,9 +47,6 @@ colors:
     matches:
       foreground: CellBackground
       background: '#88c0d0'
-    bar:
-      background: '#434c5e'
-      foreground: '#d8dee9'
   normal:
     black: '#3b4252'
     red: '#bf616a'

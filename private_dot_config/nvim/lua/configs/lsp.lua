@@ -3,8 +3,9 @@ require('configs.common_fn')
 use {
 	'neovim/nvim-lspconfig',
 	config = function ()
-		require'lspconfig'.kotlin_language_server.setup{}
 		require'lspconfig'.tsserver.setup{}
+		require'lspconfig'.cssls.setup{}
+		require'lspconfig'.cssmodules_ls.setup{}
 		require'lspconfig'.lua_ls.setup{
 			settings = {
         Lua = {

@@ -14,15 +14,17 @@ local parser = vim.treesitter.get_parser(0, 'java')
 local tstree = parser:parse()[1]
 local first_import = 0
 local last_import = 0
+
 for id, node, metadata in query:iter_captures(tstree:root(),0) do
   local name = query.captures[id] -- name of the capture in the query
   local row1, col1, row2, col2 = node:range() -- range of the capture
   if name == 'first_import' then first_import = row1 + 1 end
   if name == 'last_import' then last_import = row1 + 1 end
-  -- local row1, col1, row2, col2 = node:range() -- range of the capture
-    -- print(row1, col1)
 end
-vim.cmd(first_import .. "," .. last_import .. "fold")
+
+if first_import ~= last_import then
+	vim.cmd(first_import .. "," .. last_import .. "fold")
+end
 
 local project_name = vim.fn.fnamemodify(vim.fn.getcwd(), ':p:h:t')
 local workspace_dir = '/tmp/' .. project_name
@@ -47,8 +49,6 @@ local config = {
     '--add-opens', 'java.base/java.util=ALL-UNNAMED',
     '--add-opens', 'java.base/java.lang=ALL-UNNAMED',
 		'-javaagent:' .. os.getenv("HOME") .. '/Coding/libs/lombok.jar',
-    -- '-jar', os.getenv("HOME") .. '/Coding/projects/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/plugins/org.eclipse.equinox.launcher_1.6.400.v20210924-0641.jar',
-    -- '-configuration', os.getenv("HOME") .. '/Coding/projects/eclipse.jdt.ls/org.eclipse.jdt.ls.product/target/repository/config_linux',
     '-jar', os.getenv("HOME") .. '/Coding/libs/jdt/plugins/org.eclipse.equinox.launcher.jar',
     '-configuration', os.getenv("HOME") .. '/Coding/libs/jdt/config_linux',
     '-data', workspace_dir

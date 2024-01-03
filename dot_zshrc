@@ -20,3 +20,4 @@ function projects() {
     cd $project
 }
 alias pr=projects
+eval "$(starship init zsh)"

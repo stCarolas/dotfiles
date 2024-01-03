@@ -68,7 +68,7 @@ use({ 'L3MON4D3/LuaSnip',
 
 
 vim.api.nvim_set_keymap('i', '<C-j>','<cmd> lua require"luasnip".expand_or_jump()<CR>', { noremap = true })
-vim.api.nvim_set_keymap("i", "<C-n>", "<Plug>luasnip-next-choice", {})
-vim.api.nvim_set_keymap("s", "<C-n>", "<Plug>luasnip-next-choice", {})
-vim.api.nvim_set_keymap("i", "<C-p>", "<Plug>luasnip-prev-choice", {})
-vim.api.nvim_set_keymap("s", "<C-p>", "<Plug>luasnip-prev-choice", {})
+-- vim.api.nvim_set_keymap("i", "<C-n>", "<Plug>luasnip-next-choice", {})
+-- vim.api.nvim_set_keymap("s", "<C-n>", "<Plug>luasnip-next-choice", {})
+-- vim.api.nvim_set_keymap("i", "<C-p>", "<Plug>luasnip-prev-choice", {})
+-- vim.api.nvim_set_keymap("s", "<C-p>", "<Plug>luasnip-prev-choice", {})

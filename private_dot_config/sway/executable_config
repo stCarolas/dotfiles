@@ -108,8 +108,8 @@
         bindsym Escape mode "default"
     }
 
-    bindsym $mod+space exec $menu
-    bindsym $mod+$altmod+o exec /home/stCarolas/.local/bin/swytch.sh
+bindsym $mod+space exec $menu;
+bindsym $mod+o exec ~/.local/bin/switch_workspaces.sh;
 
 input type:keyboard {
     xkb_layout us,ru

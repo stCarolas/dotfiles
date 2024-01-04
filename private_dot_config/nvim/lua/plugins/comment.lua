@@ -1,5 +1,4 @@
-require('configs.common_fn')
-use({
+return {
 	'numToStr/Comment.nvim',
 	config = function ()
 		require('Comment').setup({
@@ -73,4 +72,4 @@ use({
 
 		})
 	end
-})
+}

@@ -1,7 +1,3 @@
-vim.opt.shiftwidth = 2
-vim.opt.tabstop = 2
-vim.opt.expandtab = true
-
 local query = vim.treesitter.query.parse('java',[[
 	((package_declaration) . 
 	(import_declaration) @first_import
@@ -22,7 +18,7 @@ for id, node, metadata in query:iter_captures(tstree:root(),0) do
   if name == 'last_import' then last_import = row1 + 1 end
 end
 
-if first_import ~= last_import then
+if last_import > first_import then
 	vim.cmd(first_import .. "," .. last_import .. "fold")
 end
 
@@ -71,10 +67,10 @@ local config = {
 
 require('jdtls').start_or_attach(config)
 
-vim.cmd 'hi TSFunction guifg=#5d6f74'
-vim.cmd 'hi TSField guifg=#9acccc'
-vim.cmd 'hi TSParameter guifg=#9acccc'
-vim.cmd 'hi TSString guifg=#3b6392 gui=italic'
+-- vim.cmd 'hi TSFunction guifg=#5d6f74'
+-- vim.cmd 'hi TSField guifg=#9acccc'
+-- vim.cmd 'hi TSParameter guifg=#9acccc'
+-- vim.cmd 'hi TSString guifg=#3b6392 gui=italic'
 
 query = vim.treesitter.query.parse('java',[[
 	((marker_annotation name: (identifier) @capture )(#match? @capture "Log4j2"))

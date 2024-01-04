@@ -1,12 +1,9 @@
-local use = require'packer'.use
-
-use 'nvim-treesitter/nvim-treesitter-textobjects'
--- use 'nvim-treesitter/playground'
-use({
+return {
+	{
 	'nvim-treesitter/nvim-treesitter',
 	config = function ()
 		require'nvim-treesitter.configs'.setup {
-			ensure_installed = { "java", "lua" },
+			ensure_installed = { "xml","typescript","java","lua","json","bash","yaml","css","html" },
 			sync_install = false,
 
 			highlight = {
@@ -87,4 +84,8 @@ use({
 			},
 		}
 	end
-})
+},
+{
+	'nvim-treesitter/nvim-treesitter-textobjects'
+}
+}

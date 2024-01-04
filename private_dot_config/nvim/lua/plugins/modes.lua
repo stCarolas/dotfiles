@@ -1,5 +1,4 @@
-require('configs.common_fn')
-use({
+return {
 	'mvllow/modes.nvim',
 	config = function ()
 		require('modes').setup({
@@ -28,4 +27,4 @@ use({
 			ignore_filetypes = { 'NvimTree', 'TelescopePrompt' }
 		})
 	end
-})
+}

@@ -1,39 +1,40 @@
-require('plugins')
-require('stock_options')
-
-local use = require'packer'.use
-
-local files = io.popen('find "$HOME"/.config/nvim/lua/configs -type f')
-for file in files:lines() do
-	local req_file = file:gmatch('%/lua%/(.+).lua$'){0}:gsub('/', '.')
-	local status_ok, _ = pcall(require, req_file)
-	if not status_ok then
-		vim.notify('Failed loading ' .. req_file, vim.log.levels.ERROR)
-	end
+local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
+if not vim.loop.fs_stat(lazypath) then
+  vim.fn.system({
+    "git",
+    "clone",
+    "--filter=blob:none",
+    "https://github.com/folke/lazy.nvim.git",
+    "--branch=stable", -- latest stable release
+    lazypath,
+  })
 end
 
-use 'gpanders/editorconfig.nvim'
+vim.opt.rtp:prepend(lazypath)
+vim.opt.shiftwidth = 2
+vim.opt.tabstop = 2
+vim.opt.expandtab = true
+vim.opt.cursorline = true
+vim.opt.number = true
+vim.opt.termguicolors = true
 
-use {
-	'kevinhwang91/nvim-hlslens',
-	config = function() require('hlslens').setup({
-		nearest_float_when = 'always',
-		calm_down = true
-	}) end
-}
-use 'dstein64/nvim-scrollview'
+vim.g.mapleader = "m"
+vim.g.neoterm_shell = "/usr/bin/zsh"
 
--- use 'github/copilot.vim'
+vim.cmd 'set clipboard+=unnamedplus'
+vim.cmd 'set laststatus=3'
+vim.cmd 'set splitkeep=topline'
 
--- use {
--- 	'glepnir/mcc.nvim',
--- 	config = function()
--- 		require('mcc').setup({
--- 			java = {
--- 					{'-','->','-'}
--- 				}
--- 		})
--- 	end
--- }
+vim.api.nvim_set_keymap('n',';',':', { noremap = true })
+vim.api.nvim_set_keymap('n','J','<cmd>bnext<cr>', { noremap = true })
+vim.api.nvim_set_keymap('n','K','<cmd>bprev<cr>', { noremap = true })
+vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
 
-use "folke/lua-dev.nvim"
+vim.g.mapleader = "m"
+vim.o.foldlevel = 99
+vim.o.foldlevelstart = 90
+
+require("lazy").setup("plugins")
+
+-- resize splits when Vim is resized
+vim.api.nvim_create_autocmd('VimResized', { command = 'horizontal wincmd =' })

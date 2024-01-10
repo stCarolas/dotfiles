@@ -18,7 +18,7 @@ return {
 		-- require("telescope").load_extension('command_center')
 		require("telescope").load_extension("ui-select")
 		vim.api.nvim_set_keymap('','<M-o>','<cmd>lua require("telescope.builtin").find_files({layout_strategy="vertical"})<cr>', {})
-		vim.api.nvim_set_keymap('','gt','<cmd>lua require("telescope.builtin").buffers({layout_strategy="vertical"})<cr>', {})
+		vim.api.nvim_set_keymap('','gt','<cmd>lua require("telescope.builtin").buffers({ sort_lastused = true, ignore_current_buffer = true ,layout_strategy="vertical"})<cr>', {})
 		vim.api.nvim_set_keymap('','gs','<cmd>lua require("telescope.builtin").live_grep({layout_strategy="vertical"})<cr>', {})
 		vim.api.nvim_set_keymap('','gm',"<cmd>lua require'telescope.builtin'.treesitter()<cr>", {})
 

@@ -67,11 +67,6 @@ local config = {
 
 require('jdtls').start_or_attach(config)
 
--- vim.cmd 'hi TSFunction guifg=#5d6f74'
--- vim.cmd 'hi TSField guifg=#9acccc'
--- vim.cmd 'hi TSParameter guifg=#9acccc'
--- vim.cmd 'hi TSString guifg=#3b6392 gui=italic'
-
 query = vim.treesitter.query.parse('java',[[
 	((marker_annotation name: (identifier) @capture )(#match? @capture "Log4j2"))
 ]])

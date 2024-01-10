@@ -17,6 +17,7 @@ vim.opt.expandtab = true
 vim.opt.cursorline = true
 vim.opt.number = true
 vim.opt.termguicolors = true
+vim.cmd 'set cmdheight=0'
 
 vim.g.mapleader = "m"
 vim.g.neoterm_shell = "/usr/bin/zsh"
@@ -36,5 +37,7 @@ vim.o.foldlevelstart = 90
 
 require("lazy").setup("plugins")
 
--- resize splits when Vim is resized
-vim.api.nvim_create_autocmd('VimResized', { command = 'horizontal wincmd =' })
+
+-- todo потыкать AckslD/nvim-neoclip.lua
+-- todo потыкать https://github.com/tversteeg/registers.nvim
+-- todo пофиксить path и buffer автокомплиты

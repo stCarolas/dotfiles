@@ -93,6 +93,28 @@ return { 'L3MON4D3/LuaSnip',
 			})
 		})
 
+		ls.add_snippets("java", {
+			s("strf", {
+				t({"private String "}), i(1), t({";"}),
+				t({"",""}),
+				t({"","public String get"}),l(l._1:gsub("^%l", string.upper), 1), t({"() {",""}),
+				t({"\treturn "}),rep(1),t({";"}),
+				t({"","}"}),i(0)
+			})
+		})
+
+    ls.add_snippets("java", {
+      s("aNN",{
+        t("assertNotNull("), i(0),t(");"),
+      })
+    })
+
+    ls.add_snippets("java", {
+      s("getlog",{
+        t("private final static Logger log = LogManager.getLogger();"),
+      })
+    })
+
 		ls.add_snippets("typescriptreact", {
 			s("div", {
 				t({"<div>"}), i(0), t({"</div>"}),
@@ -129,6 +151,21 @@ return { 'L3MON4D3/LuaSnip',
 				t({'const ['})
         ,i(1), t({', set'}),l(l._1:gsub("^%l", string.upper), 1),
         t('] = useState<'),i(2, "any"),t('>'),t('('),i(0),t(');')
+			})
+    })
+
+		ls.add_snippets("typescriptreact", {
+			s("effect", {
+				t({'useEffect(() => {',""}),
+        i(0),
+        t({"",'},['}), i(1), t(']);')
+			})
+    })
+
+		ls.add_snippets("typescriptreact", {
+			s("css", {
+				t('import classes from "./'),f(get_tsx_component_name, {},{}),t('.module.css";'),
+        i(0),
 			})
     })
 

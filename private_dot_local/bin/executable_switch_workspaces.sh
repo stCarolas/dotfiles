@@ -1,2 +1,2 @@
-workspace=$(swaymsg -t get_workspaces | jq -r '.[].name' | rofi -dmenu)
-swaymsg workspace $workspace
+workspace=$(hyprctl workspaces -j | jq -r '.[].name' | wofi --show dmenu)
+hyprctl dispatch workspace $workspace

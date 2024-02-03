@@ -5,7 +5,7 @@ return {
 		require'nvim-treesitter.configs'.setup {
 			ensure_installed = {
           "markdown","tsx",
-          "xml","typescript","java","lua","json","bash","yaml","css","html","dockerfile" },
+          "xml","typescript","java","lua","json","bash","yaml","css","html","dockerfile","yuck" },
 			sync_install = false,
 
 			highlight = {

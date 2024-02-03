@@ -20,19 +20,23 @@ vim.opt.termguicolors = true
 vim.opt.cmdheight=0
 vim.opt.laststatus=3
 vim.opt.splitkeep="topline"
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 90
 
 vim.g.neoterm_shell = "/usr/bin/zsh"
+vim.g.mapleader = "m"
 
 vim.cmd 'set clipboard+=unnamedplus'
 
 vim.api.nvim_set_keymap('n',';',':', { noremap = true })
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
 
-vim.g.mapleader = "m"
-vim.o.foldlevel = 99
-vim.o.foldlevelstart = 90
+require("lazy").setup("plugins",{
+  change_detection = {
+    notify = false
+  },
+})
 
-require("lazy").setup("plugins")
-
--- todo потыкать AckslD/nvim-neoclip.lua
--- todo потыкать https://github.com/tversteeg/registers.nvim
+-- todo AckslD/nvim-neoclip.lua
+-- todo https://github.com/tversteeg/registers.nvim
+-- todo https://github.com/rasulomaroff/reactive.nvim

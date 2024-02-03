@@ -15,7 +15,7 @@ return {
         },
       })
       vim.api.nvim_set_keymap('','<leader>t','<cmd>lua require("neotest").run.run()<cr>', {})
-      vim.api.nvim_set_keymap('','<F3>','<cmd>lua require("neotest").output.open()<cr>', {})
+      vim.api.nvim_set_keymap('','<F3>','<cmd>lua require("neotest").output_panel.open()<cr>', {})
     end
   }
 }

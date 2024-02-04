@@ -1,0 +1,17 @@
+(defwidget mail []
+	(box :class "mail container"
+		(box
+      :orientation "h"
+      :halign "center"
+      :spacing 20
+      :space-evenly "false"
+      :vexpand "false"
+      :hexpand "false"
+      (image
+        :path "/home/stcarolas/.config/eww/images/gmail.png"
+        :image-height 50
+        :image-width 50)
+			(box :class "mailbox" :space-evenly "false" :vexpand "false" :hexpand "false"
+				(box :class "mail-counter" :vexpand "false" mails)))))
+
+(defpoll mails :interval "5m" `scripts/mails`)

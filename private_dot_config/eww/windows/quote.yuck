@@ -1,0 +1,7 @@
+(defwindow quote
+  :monitor 0
+  :stacking "bottom"
+  :geometry (geometry :x "0px" :y "200px" :anchor "top center")
+  (quote))
+
+(include '/home/stcarolas/.config/eww/widgets/quote.yuck')

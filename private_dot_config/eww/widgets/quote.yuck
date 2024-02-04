@@ -1,0 +1,9 @@
+(defwidget quote []
+  (box :orientation "v"
+    (box :class "quote-text" {quote})
+    (box :class "quote-author" {author})
+  )
+)
+
+(defpoll quote :interval "1h" `curl -Ss https://zenquotes.io/api/random | tee /tmp/quote | jq -r '.[].q'`)
+(defpoll author :interval "1h" `cat /tmp/quote | jq -r '.[].a'`)

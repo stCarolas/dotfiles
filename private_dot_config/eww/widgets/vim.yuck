@@ -1,0 +1,13 @@
+(defwidget vim-commands []
+  (box :orientation "v" :class "container"
+    (command :command "g;" :description "return to position of last insert")
+    (command :command "gf" :description "open file under cursor")
+  )
+)
+
+(defwidget command [?command description]
+  (box :orientation "h" :class "command-container" :width 100
+    (label :class "command" :width 20 :halign "start" :text {command})
+    (label :class "description" :width 80 :halign "start" :text {description})
+  )
+)

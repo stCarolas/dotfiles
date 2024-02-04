@@ -1,0 +1,9 @@
+(defwidget datetime []
+  (box :orientation "v" :class "container" :space-evenly "false"
+    (box :class "time" {time})
+    (box :class "day" {day})
+    (box :class "day-of-week" {dayOfWeek})))
+
+(defpoll time :interval "5s" "date \"+%H:%M\"")
+(defpoll day :interval "5h" "date \"+%d %B\"")
+(defpoll dayOfWeek :interval "10h" "date \"+%A\"")

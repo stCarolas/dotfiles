@@ -1,0 +1,18 @@
+(defwindow dashboard
+           :monitor 0
+           :geometry (geometry :x "0%"
+                               :y "0px"
+                               :anchor "center")
+           :stacking "bottom"
+           (dashboard))
+
+(defwidget dashboard []
+  (box :orientation "v"
+    (box :orientation "h" :class "calendar" :space-evenly "false"
+      (datetime)
+      (mail)
+      (logout))))
+
+(include "/home/stcarolas/.config/eww/widgets/logout.yuck")
+(include "/home/stcarolas/.config/eww/widgets/mail.yuck")
+(include "/home/stcarolas/.config/eww/widgets/datetime.yuck")

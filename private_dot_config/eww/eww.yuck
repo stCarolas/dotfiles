@@ -1,0 +1,3 @@
+(include './windows/dashboard.yuck')
+(include './windows/quote.yuck')
+(include './windows/vim.yuck')

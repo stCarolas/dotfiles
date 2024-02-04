@@ -1,0 +1,7 @@
+(defwidget logout []
+	(box :class "logout container" :vexpand "false" :hexpand "false"
+		(button :class "btn_logout" :onclick "hyprctl dispatch exit"
+      (image
+        :path "/home/stcarolas/.config/eww/images/switch.png"
+        :image-height 50
+        :image-width 50))))

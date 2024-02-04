@@ -29,6 +29,7 @@ vim.g.mapleader = "m"
 vim.cmd 'set clipboard+=unnamedplus'
 
 vim.api.nvim_set_keymap('n',';',':', { noremap = true })
+vim.api.nvim_set_keymap('n','<leader>e',':term<CR>', { noremap = true })
 vim.api.nvim_set_keymap('t', '<Esc>', '<C-\\><C-n>', { noremap = true })
 
 require("lazy").setup("plugins",{

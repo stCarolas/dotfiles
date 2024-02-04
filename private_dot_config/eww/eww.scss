@@ -1,0 +1,97 @@
+* {
+  all: unset;
+}
+
+.container {
+  background-color: #121212;
+  color: #ffd5cd;
+  font-family: Intune Mono;
+  border-radius: 8px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.day {
+  padding-top: 5px;
+  font-size: 16px;
+}
+
+.time {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding-top: 5px;
+  font-size: 30px;
+  color: #d35d6e;
+  font-family: "IntoneMono Nerd Font";
+}
+
+.vim-shortcuts {
+  padding-top: 10px;
+}
+
+.vim-shortcut-description {
+  margin-left: 20px;
+}
+
+.vim-shortcut-command {
+  color: yellow;
+  font-family: "IntoneMono Nerd Font";
+}
+
+.vim-shortcuts-title {
+  color: #d35d6e;
+  border-bottom: 1px solid #ffd5cd;
+  margin-bottom: 10px;
+}
+
+.logout {
+  padding-left: 21px;
+  padding-right: 20px;
+  padding-top: 10px;
+  margin-left: 5px;
+}
+
+.mail {
+  margin-left: 5px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.mail-counter {
+  background-color: #5f5f5f;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+.quote-text {
+  color: #d35d6e;
+  background-color: rgb(255, 229, 205);
+  border-radius: 8px;
+  border: 1px solid #121212;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-family: "IntoneMono Nerd Font";
+  font-weight: 900;
+  font-size: 25px;
+}
+
+.quote-author {
+  font-weight: 900;
+  font-size: 25px;
+  margin-left: 500px;
+  color: white;
+  text-shadow:
+    1px 1px 2px rgb(211,93,110);
+}
+
+.command {
+  margin-top: 10px;
+  color: #d35d6e;
+}

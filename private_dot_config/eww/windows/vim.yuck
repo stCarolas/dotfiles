@@ -1,0 +1,7 @@
+(defwindow vim
+  :monitor 0
+  :stacking "bottom"
+  :geometry (geometry :x "10px" :y "10px" :anchor "bottom center")
+  (vim-commands))
+
+(include '/home/stcarolas/.config/eww/widgets/vim.yuck')

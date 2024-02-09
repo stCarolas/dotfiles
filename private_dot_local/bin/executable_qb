@@ -4,8 +4,4 @@ basedir=~/.local/share/qb/$current_workspace
 echo $basedir
 mkdir -p $basedir
 ln -s ~/.config/qutebrowser $basedir/config
-if [ $current_workspace = "media" ]; then
   QUTE_QT_WRAPPER=PyQt5 qutebrowser -B $basedir $@
-else
-  qutebrowser -B $basedir $@
-fi

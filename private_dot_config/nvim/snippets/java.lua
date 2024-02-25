@@ -32,7 +32,6 @@ return {
 		i(0),
 		t({ "", "}" }),
 	}),
-}, {
 	s("microtest", {
 		t("package "),
 		f(get_java_package, {}, {}),
@@ -51,17 +50,14 @@ return {
 		i(0),
 		t({ "", "}" }),
 	}),
-}, {
 	s("{", {
 		t({ "{", "" }),
 		i(0),
 		t({ "", "}" }),
 	}),
-}, {
 	s("serialversion", {
 		t("private static final long serialVersionUID = 1L;"),
 	}),
-}, {
 	s("test", {
 		t({ "@Test", "public void test" }),
 		i(1),
@@ -69,11 +65,9 @@ return {
 		i(0),
 		t({ "", "}" }),
 	}),
-}, {
 	s("aseq", {
 		t({ "assertEquals(expected, actual);" }),
 	}),
-}, {
 	s("strf", {
 		t({ "private String " }),
 		i(1),
@@ -88,13 +82,11 @@ return {
 		t({ "", "}" }),
 		i(0),
 	}),
-}, {
 	s("aNN", {
 		t("assertNotNull("),
 		i(0),
 		t(");"),
 	}),
-}, {
 	s("getlog", {
 		t("private final static Logger log = LogManager.getLogger();"),
 	}),

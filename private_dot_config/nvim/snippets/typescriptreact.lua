@@ -23,7 +23,6 @@ return {
 		i(0),
 		t({ "", "</div>" }),
 	}),
-}, {
 	s("comp", {
 		t({ 'import React from "react";' }),
 		t({ "", "" }),
@@ -39,7 +38,6 @@ return {
 		t({ "\t);", "" }),
 		t({ "}" }),
 	}),
-}, {
 	s("class", {
 		t({ "export class " }),
 		f(get_ts_name, {}, {}),
@@ -47,7 +45,6 @@ return {
 		i(0),
 		t({ "}" }),
 	}),
-}, {
 	s("state", {
 		t({ "const [" }),
 		i(1),
@@ -60,7 +57,6 @@ return {
 		i(0),
 		t(");"),
 	}),
-}, {
 	s("effect", {
 		t({ "useEffect(() => {", "" }),
 		i(0),
@@ -68,7 +64,6 @@ return {
 		i(1),
 		t("]);"),
 	}),
-}, {
 	s("importcss", {
 		t('import classes from "./'),
 		f(get_tsx_component_name, {}, {}),

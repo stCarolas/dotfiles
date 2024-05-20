@@ -9,8 +9,13 @@ return {
 					"on_exit_set_status",
 					"on_complete_notify",
 					"on_complete_dispose",
-          { "on_output_quickfix", open = true, tail = true }
-				}
+					{ "on_output_quickfix", open = true, tail = true },
+				},
+				default_neotest = {
+					"on_output_summarize",
+					"on_exit_set_status",
+					"on_complete_dispose",
+				},
 			},
 		})
 		vim.api.nvim_set_keymap("", "<F4>", "<cmd>:OverseerOpen<cr>", {})

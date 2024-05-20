@@ -4,4 +4,5 @@ return {
 	"rcarriga/nvim-notify",
 	"rafcamlet/nvim-luapad",
 	"HiPhish/rainbow-delimiters.nvim",
+  "nvim-neotest/nvim-nio"
 }

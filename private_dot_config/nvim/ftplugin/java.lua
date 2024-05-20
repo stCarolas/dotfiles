@@ -1,5 +1,5 @@
 local query = vim.treesitter.query.parse('java',[[
-	((package_declaration) . 
+	((package_declaration) .
 	(import_declaration) @first_import
 	(import_declaration)*
 	(import_declaration)? @last_import .
@@ -55,10 +55,20 @@ local config = {
 		java = {
 			completion = {
 				favoriteStaticMembers = {
-					"org.junit.jupiter.api.Assertions.*",
-					"org.mockito.Mockito.*"
+            "org.hamcrest.MatcherAssert.assertThat",
+            "org.hamcrest.Matchers.*",
+            "org.hamcrest.CoreMatchers.*",
+            "org.junit.jupiter.api.Assertions.*",
+            "java.util.Objects.requireNonNull",
+            "java.util.Objects.requireNonNullElse",
+            "org.mockito.Mockito.*"
 				}
-			}
+			},
+      codeGeneration = {
+        toString = {
+          template = "{\"_type\"=\"${object.className}\",\"${member.name()}\"=\"${member.value}\", ${otherMembers}}"
+        }
+      };
 		}
 	},
 

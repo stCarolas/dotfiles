@@ -11,3 +11,21 @@
     (label :class "description" :width 80 :halign "start" :text {description})
   )
 )
+
+(defwidget screenshot []
+  (image :path "/home/stcarolas/Pictures/vim.png")
+)
+
+(defwidget code []
+  (box :orientation "v" :class "code-block"
+    (box :orientation "h" :class "code-line"
+      (label :halign "start" :markup 'vim.<span color="#44AAFF">keymap.set</span><span color="orange">(</span><span color="#81b29a">""</span>, <span color="#81b29a">"gm"</span>, <span color="#d35d6e">function()</span>')
+    )
+    (box :orientation "h" :class "code-line"
+      (label :class "description" :halign "start" :markup '    <span color="#d35d6e">require</span><span color="orange">(</span><span color="#81b29a">"telescope.builtin"</span><span color="orange">)</span>.<span color="#44AAFF">treesitter</span><span color="orange">()</span>')
+    )
+    (box :orientation "h" :class "code-line"
+      (label :class "description" :halign "start" :markup '<span color="#d35d6e">end</span><span color="orange">)</span>')
+    )
+  )
+)

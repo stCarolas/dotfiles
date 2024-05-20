@@ -88,6 +88,13 @@ return {
 		t(");"),
 	}),
 	s("getlog", {
-		t("private final static Logger log = LogManager.getLogger();"),
+		t("private Logger log = LoggerFactory.getLogger(PaymentCommandController.class);"),
+	}),
+	s("var", {
+		t("var "),
+    i(0),
+    t(" = new "),
+    i(1),
+    t("();")
 	}),
 }

@@ -8,7 +8,6 @@ return {
           require("neotest-java")({
               ignore_wrapper = true, -- whether to ignore maven/gradle wrapper
           })
-
         },
         consumers = {
           overseer = require("neotest.consumers.overseer"),

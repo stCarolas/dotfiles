@@ -38,7 +38,7 @@ return {
 		t({ "\t);", "" }),
 		t({ "}" }),
 	}),
-	s("class", {
+	s("type", {
 		t({ "export class " }),
 		f(get_ts_name, {}, {}),
 		t({ "{", "" }),
@@ -69,5 +69,18 @@ return {
 		f(get_tsx_component_name, {}, {}),
 		t('.module.css";'),
 		i(0),
+	}),
+	s("class", {
+		t("className={`${classes."),
+		i(0),
+		t("}`}"),
+	}),
+	s("fn", {
+		t("("),
+		i(1),
+		t(") => {"),
+		i(0),
+		i(0),
+    t("}"),
 	}),
 }

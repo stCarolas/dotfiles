@@ -21,9 +21,9 @@ if not vim.loop.fs_stat(lazypath) then
 	vim.fn.system({
 		"git",
 		"clone",
-		"--filter=blob:none",
+		"--filter=blob:non	e",
 		"https://github.com/folke/lazy.nvim.git",
-		"--branch=stable", -- latest stable release
+	"--branch=stable", -- latest stable release
 		lazypath,
 	})
 end

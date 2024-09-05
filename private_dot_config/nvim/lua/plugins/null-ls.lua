@@ -1,4 +1,4 @@
-return { 'jose-elias-alvarez/null-ls.nvim',
+return { 'nvimtools/none-ls.nvim',
 	config = function ()
 		local null_ls = require("null-ls")
 

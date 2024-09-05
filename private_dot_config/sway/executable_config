@@ -11,7 +11,7 @@
   set $up    k
   set $right l
 
-  set $term foot
+  set $term kitty
   set $menu nwggrid
 
   set $mod Mod4
@@ -23,7 +23,7 @@
 # Basics:
 #
     bindsym $mod+Return         exec $term
-    bindsym $mod+$altmod+Return exec ~/.local/bin/qb
+    bindsym $mod+$altmod+Return exec ~/.local/bin/qbi3
     bindsym $mod+q              kill
     bindsym $mod+Shift+c        reload
 #
@@ -48,10 +48,11 @@
     bindsym $mod+w layout tabbed
     bindsym $mod+e layout toggle split
     bindsym $mod+a focus parent
+    bindsym $mod+i focus child
 
     bindsym $mod+f             fullscreen
     bindsym $mod+$altmod+space floating toggle
-    bindsym $mod+$altmod+i     focus floating
+    bindsym $mod+$altmod+i     focus mode_toggle
 
 #
 # Utility bindings
@@ -66,6 +67,7 @@
         bindsym c mode "default"; exec pavucontrol
         bindsym t mode "default"; exec ~/.local/bin/rofi_trans;
         bindsym p mode "default"; exec grim -g "$(slurp)" /tmp/$(date +%Y-%m-%d_%H-%m-%s).png
+        bindsym i mode "default"; exec grim /tmp/$(date +%Y-%m-%d_%H-%m-%s).png
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
@@ -75,6 +77,14 @@
 #
     bindsym $mod+tab workspace back_and_forth
     bindsym $altmod+tab exec ~/.local/bin/windowcd.sh
+    bindsym $mod+1 mode "default"; workspace media;
+    bindsym $mod+shift+1 mode "default"; move workspace media;
+    bindsym $mod+2 mode "default"; workspace code;
+    bindsym $mod+shift+2 mode "default"; move workspace code;
+    bindsym $mod+3 mode "default"; workspace talk;
+    bindsym $mod+shift+3 mode "default"; move workspace talk;
+    bindsym $mod+4 mode "default"; workspace game;
+    bindsym $mod+shift+4 mode "default"; move workspace game;
 #
 # Utility bindings
 #
@@ -84,10 +94,31 @@
         bindsym c mode "default"; workspace code;
         bindsym t mode "default"; workspace talk;
         bindsym g mode "default"; workspace game;
-        bindsym o mode "default"; exec ~/.local/bin/switch_workspaces.sh;
+        bindsym o mode "default"; exec ~/.local/bin/switch_workspaces_sway.sh;
 
         bindsym Return mode "default"
         bindsym Escape mode "default"
+    }
+
+    bindsym $mod+F1 mode "navigation"
+    mode "navigation" {
+        bindsym m mode "default"; workspace media;
+        bindsym c mode "default"; workspace code;
+        bindsym t mode "default"; workspace talk;
+        bindsym g mode "default"; workspace game;
+        bindsym o mode "default"; exec ~/.local/bin/switch_workspaces_sway.sh;
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $left  focus left
+        bindsym $down  focus down
+        bindsym $up    focus up
+        bindsym $right focus right
+
+        bindsym $altmod+$left  move left
+        bindsym $altmod+$down  move down
+        bindsym $altmod+$up    move up
+        bindsym $altmod+$right move right
     }
 #
 # Resize bindings
@@ -109,11 +140,11 @@
     }
 
 bindsym $mod+space exec $menu;
-bindsym $mod+o exec ~/.local/bin/switch_workspaces.sh;
+bindsym $mod+o exec ~/.local/bin/switch_workspaces_sway.sh
 
 input type:keyboard {
     xkb_layout us,ru
-    xkb_options grp:lctrl_rctrl_switch,ctrl:nocaps
+    # xkb_options grp:lctrl_rctrl_switch,ctrl:nocaps
 }
 
 # for_window [title=".*"] floating enable
@@ -122,8 +153,10 @@ for_window [class="Steam"] move workspace game
 for_window [class="discord"] move workspace talk
 
 exec wlsunset &
+exec nwggrid-server &
 exec systemctl --user enable --now podman.socket &
-exec ~/.local/bin/nwg-drawer -r &
+exec eww open dashboard && eww open quote & eww open hotkeys
+exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway &
 
 include specific
 

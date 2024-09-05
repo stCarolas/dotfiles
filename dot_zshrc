@@ -21,3 +21,5 @@ function projects() {
 }
 alias pr=projects
 eval "$(starship init zsh)"
+# title with name of current working dir
+precmd () {print -Pn "\e]0;${PWD##*/}\a"}

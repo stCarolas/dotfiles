@@ -48,15 +48,15 @@ return {
 				incremental_selection = {
 					enable = true,
 					keymaps = {
-						init_selection = "gnn",
-						node_incremental = "grn",
-						scope_incremental = "grc",
-						node_decremental = "grm",
+						init_selection = "<leader>v",
+						node_incremental = "<leader>v",
+						scope_incremental = "<leader>V",
+						node_decremental = false,
 					},
 				},
 
 				indent = {
-					enable = true,
+					enable = false
 				},
 
 				textobjects = {
@@ -72,28 +72,30 @@ return {
 							["ia"] = "@parameter.inner",
 							["ac"] = "@block.outer",
 							["ic"] = "@block.inner",
-							["af"] = "@function.outer",
-							["if"] = "@function.inner",
+							["am"] = "@function.outer",
+							["im"] = "@function.inner",
+							["ao"] = "@statement.outer",
 						},
 					},
 					move = {
 						enable = true,
 						-- set_jumps = true, -- whether to set jumps in the jumplist
 						goto_next_start = {
-							["]m"] = "@function.outer",
+							["]m"] = "@function.inner",
 							["]a"] = "@parameter.inner",
+              ["]s"] = { query = "@scope", query_group = "locals", desc = "Next scope" }
 						},
 						goto_previous_start = {
-							["[m"] = "@function.outer",
+							["[m"] = "@function.inner",
 							["[a"] = "@parameter.inner",
 						},
 						goto_next_end = {
 							["]M"] = "@function.outer",
-							["]A"] = "@parameter.inner",
+							["]A"] = "@parameter.outer",
 						},
 						goto_previous_end = {
 							["[M"] = "@function.outer",
-							["[A"] = "@parameter.inner",
+							["[A"] = "@parameter.outer",
 						},
 					},
 				},

@@ -12,7 +12,7 @@ fzf_open() {
         then
             cd $target
         else
-            nvim $target
+            nvim -n $target
         fi
     fi
 }

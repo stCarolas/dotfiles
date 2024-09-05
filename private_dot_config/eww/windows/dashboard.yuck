@@ -10,8 +10,7 @@
   (box :orientation "v"
     (box :orientation "h" :class "calendar" :space-evenly "false"
       (datetime)
-      (mail)
-      (logout))))
+      (mail))))
 
 (include "/home/stcarolas/.config/eww/widgets/logout.yuck")
 (include "/home/stcarolas/.config/eww/widgets/mail.yuck")

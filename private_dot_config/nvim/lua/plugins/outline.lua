@@ -7,7 +7,8 @@ return {
 
     require("outline").setup {
       outline_window = {
-        width = 40
+        width = 40,
+        auto_close = true
       }
     }
   end,

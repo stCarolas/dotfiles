@@ -1,3 +1,3 @@
 return {
-	{ "akinsho/toggleterm.nvim", version = "*", opts = { direction = "tab" } },
+	{ "akinsho/toggleterm.nvim", version = "*", opts = { direction = "float", shell = "zsh" } },
 }

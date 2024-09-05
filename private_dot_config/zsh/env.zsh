@@ -5,3 +5,4 @@ export BROWSER=none
 export MANPAGER='nvim +Man!'
 export KUBECONFIG="/home/stcarolas/.config/k3s.yaml"
 export TERM=xterm
+export _JAVA_AWT_WM_NONREPARENTING=1

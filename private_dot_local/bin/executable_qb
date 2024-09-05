@@ -1,7 +1,9 @@
 #!/bin/sh
 current_workspace=$(hyprctl activeworkspace -j | jq -r .name)
-basedir=~/.local/share/qb/$current_workspace
-echo $basedir
+basedir=~/.local/share/firefox/$current_workspace
+# echo $basedir
 mkdir -p $basedir
-ln -s ~/.config/qutebrowser $basedir/config
-  QUTE_QT_WRAPPER=PyQt5 qutebrowser -B $basedir $@
+firefox --profile $basedir
+# ln -s ~/.config/qutebrowser $basedir/config
+#   QUTE_QT_WRAPPER=PyQt5 qutebrowser -B $basedir $@
+# flatpak run org.qutebrowser.qutebrowser

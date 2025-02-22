@@ -2,7 +2,7 @@ return {
 	{
 		"neovim/nvim-lspconfig",
 		config = function()
-			require("lspconfig").tsserver.setup({})
+			require("lspconfig").ts_ls.setup({})
 			require("lspconfig").cssls.setup({})
 			require("lspconfig").cssmodules_ls.setup({})
 			require("lspconfig").pylsp.setup({})

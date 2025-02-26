@@ -8,6 +8,7 @@ return {
 			hints = {
 				dictionary = "hjklsadfewcmpgio",
 			},
+      sort = "last"
 		})
 		vim.keymap.set({ "n" }, "gt", function()
 			require("snipe").open_buffer_menu({ max_path_width = 2 })

@@ -38,12 +38,14 @@ return {
 		t(";"),
 		t({ "", "" }),
 		t({ "", "import static org.junit.jupiter.api.Assertions.*;" }),
-		t({ "", "import static org.hamcrest.Matchers.*;" }),
+		t({ "", "import static org.mockito.Mockito.*;" }),
 		t({ "", "" }),
 		t({ "", "import io.micronaut.test.extensions.junit5.annotation.MicronautTest;" }),
-		t({ "", "import io.restassured.specification.RequestSpecification;" }),
+		t({ "", "import org.instancio.junit.InstancioExtension;" }),
+		t({ "", "import org.junit.jupiter.api.extension.ExtendWith;" }),
 		t({ "", "" }),
 		t({ "", "@MicronautTest" }),
+		t({ "", "@ExtendWith(InstancioExtension.class)" }),
 		t({ "", "public class " }),
 		f(get_buffer_name, {}, {}),
 		t({ " {", "\t" }),
@@ -87,14 +89,37 @@ return {
 		i(0),
 		t(");"),
 	}),
-	s("getlog", {
-		t("private Logger log = LoggerFactory.getLogger(PaymentCommandController.class);"),
-	}),
+	s({ trig = "getlog" }, {
+		t("private Logger log = LoggerFactory.getLogger("),
+		f(get_buffer_name, {}, {}),
+		t(".class);"),
+	}, { callbacks = {
+		-- position of the node, not the jump-index!!
+		-- s("trig", {t"first node", t"second node", i(1, "third node")}).
+		[-1] = {
+			[events.pre_expand] = function(node, _event_args)
+				print("1!")
+			end,
+		},
+	}}),
 	s("var", {
 		t("var "),
-    i(0),
-    t(" = new "),
-    i(1),
-    t("();")
+		i(0),
+		t(" = new "),
+		i(1),
+		t("();"),
+	}),
+	s("eqhash", {
+		t({ "", "@Override", "public boolean equals(Object o) {", "" }),
+		t({ "      return " }),
+		f(get_buffer_name, {}, {}),
+		t({ "Object.equals(this, o);" }),
+		t({ "", "}" }),
+		t({ "", "" }),
+		t({ "", "@Override", "public int hashCode() {", "" }),
+		t({ "      return " }),
+		f(get_buffer_name, {}, {}),
+		t({ "Object.hashCode(this);" }),
+		t({ "", "}" }),
 	}),
 }

@@ -53,7 +53,8 @@ return {
 					['<CR>'] = cmp.mapping.confirm({ select = true }), -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
 				}),
 				sources = cmp.config.sources({
-					{ name = 'copilot', group = 2 },
+          -- { name = 'cmp_ai' },
+          { name = 'minuet' },
 					{ name = 'nvim_lsp' },
 					{ name = 'buffer' },
 					{ name = 'path' }

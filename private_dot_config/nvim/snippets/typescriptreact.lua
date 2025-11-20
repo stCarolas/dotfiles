@@ -24,9 +24,6 @@ return {
 		t({ "", "</div>" }),
 	}),
 	s("comp", {
-		t({ 'import React from "react";' }),
-		t({ "", "" }),
-		t({ "", "" }),
 		t({ "export default function " }),
 		f(get_tsx_component_name, {}, {}),
 		t({ "({}){", "" }),
@@ -44,6 +41,15 @@ return {
 		t({ "{", "" }),
 		i(0),
 		t({ "}" }),
+	}),
+	s("observer", {
+		t({ "const " }),
+		i(1),
+		t({ " = observer(({" }),
+		i(2),
+    t({ "}) => {", ""}),
+		t({"return <></>;",""}),
+		t({ "});" }),
 	}),
 	s("t18", {
 		t({ "{t(\"" }), i(0), t({ "\")}" }),

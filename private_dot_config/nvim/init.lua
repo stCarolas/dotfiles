@@ -50,3 +50,4 @@ vim.api.nvim_create_autocmd("FocusLost", {
 -- todo AckslD/nvim-neoclip.lua
 -- todo https://github.com/tversteeg/registers.nvim
 -- todo https://github.com/rasulomaroff/reactive.nvim
+-- todo https://github.com/sontungexpt/better-diagnostic-virtual-text
